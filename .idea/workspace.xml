@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate/Hibernate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate/src/main/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate/src/main/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate/src/main/Sale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate/src/main/Transactions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate/src/main/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assessment-3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assessment-3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc1035/project3/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate/src/project3/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/stock.sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate/src/main/resources/stock.sample.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate/src/main/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate/src/main/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate/src/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate/src/main/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate/src/main/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate/src/main/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate/src/main/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate/src/main/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +47,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -71,6 +60,40 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Hibernate/src/project3" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.test">
+    <configuration name="Sale" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Sale" />
+      <module name="Hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.test" />
+      <module name="Hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Sale" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -86,22 +109,34 @@
       <workItem from="1582738031655" duration="1148000" />
       <workItem from="1582748462234" duration="952000" />
       <workItem from="1582750012856" duration="4936000" />
-      <workItem from="1582756163002" duration="8563000" />
+      <workItem from="1582756163002" duration="10872000" />
     </task>
+    <task id="LOCAL-00001" summary="Set up most classes, created a sale loop and recipt with a hashmap. This does not work with db rn.&#10;db connection,query,insert and data all need creating in transactions?">
+      <created>1582768423687</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582768423687</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set up most classes, created a sale loop and recipt with a hashmap. This does not work with db rn.&#10;db connection,query,insert and data all need creating in transactions?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up most classes, created a sale loop and recipt with a hashmap. This does not work with db rn.&#10;db connection,query,insert and data all need creating in transactions?" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="800" height="679" key="#Project_Structure" timestamp="1582749006445">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="278" y="59" width="800" height="679" key="#Project_Structure/0.27.1366.741@0.27.1366.741" timestamp="1582749006445" />
-    <state x="0" y="27" width="800" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582756779337">
+    <state x="223" y="69" width="800" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582769116855">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="0" y="27" width="800" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1582756779337" />
+    <state x="223" y="69" width="800" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1582769116855" />
     <state x="498" y="64" width="374" height="628" key="#com.intellij.ide.util.MemberChooser" timestamp="1582763962053">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -118,18 +153,42 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="196" y="323" width="974" height="151" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.27.1366.741@0.27.1366.741" timestamp="1582749086253" />
+    <state x="133" y="27" width="1110" height="741" key="CommitChangelistDialog2" timestamp="1582768422888">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="133" y="27" width="1110" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1582768422888" />
     <state x="327" y="141" width="701" height="517" key="FileChooserDialogImpl" timestamp="1582739019653">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="327" y="141" width="701" height="517" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1582739019653" />
+    <state width="1251" height="160" key="GridCell.Tab.0.bottom" timestamp="1582770555814">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1251" height="160" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582770555814" />
+    <state width="1251" height="160" key="GridCell.Tab.0.center" timestamp="1582770555813">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1251" height="160" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1582770555813" />
+    <state width="1251" height="160" key="GridCell.Tab.0.left" timestamp="1582770555812">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1251" height="160" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1582770555812" />
+    <state width="1251" height="160" key="GridCell.Tab.0.right" timestamp="1582770555813">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1251" height="160" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1582770555813" />
     <state width="259" height="542" key="HiddenNamespacesPopup" timestamp="1582754958894">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="259" height="542" key="HiddenNamespacesPopup/0.27.1366.741@0.27.1366.741" timestamp="1582754958894" />
-    <state x="10" y="27" width="1007" height="741" key="SettingsEditor" timestamp="1582768225159">
+    <state x="10" y="27" width="1007" height="741" key="SettingsEditor" timestamp="1582769054823">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="10" y="27" width="1007" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1582768225159" />
+    <state x="10" y="27" width="1007" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1582769054823" />
+    <state x="304" y="113" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1582768428830">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="304" y="113" width="800" height="530" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1582768428830" />
     <state x="562" y="142" width="284" height="473" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1582756336159">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

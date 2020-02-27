@@ -11,5 +11,6 @@ public class test{
         sale.shoppingList.put(item1,1);
         sale.shoppingList.put(item2,1);
         sale.sale();
+        System.out.println("test");
     }
 }

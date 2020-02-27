@@ -7,6 +7,7 @@ public class Menu {
         
     }
     public static int intInput(){
+
         /*
         this is for taking a number and then choosing an option eg:
         enter 1 to buy an item

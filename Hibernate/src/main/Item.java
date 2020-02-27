@@ -8,7 +8,7 @@ public class Item {
     Boolean perishable;
     double cost;
     int stock;
-
+    double sell_price;
     public Item(int id, String name, String category, Boolean perishable, double cost, int stock, double sell_price) {
         this.id = id;
         this.name = name;
@@ -19,7 +19,6 @@ public class Item {
         this.sell_price = sell_price;
     }
 
-    double sell_price;//this needs to be the same type as cost
     public static void main(String[] args){
 
     }

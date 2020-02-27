@@ -1,29 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate/Hibernate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate/src/main/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate/src/main/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate/src/main/Sale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate/src/main/Transactions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate/src/main/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assessment-3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assessment-3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc1035/project3/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate/src/project3/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stock.sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate/src/main/resources/stock.sample.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YIdL0r7Nvhzs6Wqirm7qdrZ7zj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main" />
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Hibernate/src/project3" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -36,10 +83,72 @@
       <option name="presentableId" value="Default" />
       <updated>1582633982438</updated>
       <workItem from="1582633983895" duration="262000" />
+      <workItem from="1582738031655" duration="1148000" />
+      <workItem from="1582748462234" duration="952000" />
+      <workItem from="1582750012856" duration="4936000" />
+      <workItem from="1582756163002" duration="8563000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="278" y="59" width="800" height="679" key="#Project_Structure" timestamp="1582749006445">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="278" y="59" width="800" height="679" key="#Project_Structure/0.27.1366.741@0.27.1366.741" timestamp="1582749006445" />
+    <state x="0" y="27" width="800" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582756779337">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="0" y="27" width="800" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1582756779337" />
+    <state x="498" y="64" width="374" height="628" key="#com.intellij.ide.util.MemberChooser" timestamp="1582763962053">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="498" y="64" width="374" height="628" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1582763962053" />
+    <state x="527" y="289" width="301" height="218" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582738204548">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="527" y="289" width="301" height="218" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1366.741@0.27.1366.741" timestamp="1582738204548" />
+    <state x="256" y="306" width="843" height="188" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1582739062170">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="256" y="306" width="843" height="188" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.27.1366.741@0.27.1366.741" timestamp="1582739062170" />
+    <state x="196" y="323" width="974" height="151" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582749086253">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="196" y="323" width="974" height="151" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.27.1366.741@0.27.1366.741" timestamp="1582749086253" />
+    <state x="327" y="141" width="701" height="517" key="FileChooserDialogImpl" timestamp="1582739019653">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="327" y="141" width="701" height="517" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1582739019653" />
+    <state width="259" height="542" key="HiddenNamespacesPopup" timestamp="1582754958894">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="259" height="542" key="HiddenNamespacesPopup/0.27.1366.741@0.27.1366.741" timestamp="1582754958894" />
+    <state x="10" y="27" width="1007" height="741" key="SettingsEditor" timestamp="1582768225159">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="10" y="27" width="1007" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1582768225159" />
+    <state x="562" y="142" width="284" height="473" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1582756336159">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="562" y="142" width="284" height="473" key="com.intellij.database.view.ui.DbObjectDialog/0.27.1366.741@0.27.1366.741" timestamp="1582756336159" />
+    <state x="349" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1582756167260">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="349" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1582756167260" />
+    <state x="364" y="292" width="628" height="213" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582738714614">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="364" y="292" width="628" height="213" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1366.741@0.27.1366.741" timestamp="1582738714614" />
+    <state x="6" y="27" width="1345" height="741" key="new project wizard" timestamp="1582748986745">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="6" y="27" width="1345" height="741" key="new project wizard/0.27.1366.741@0.27.1366.741" timestamp="1582748986745" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1582766994521">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1582766994521" />
   </component>
 </project>

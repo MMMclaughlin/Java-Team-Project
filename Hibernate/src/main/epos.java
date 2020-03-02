@@ -26,7 +26,7 @@ public class epos {
         System.out.format("| ID | Name | Category | Price |%n");
         System.out.format("+----+------+----------+-------+%n");
 
-        // for
+        // f
         String leftAlignFormat = "| %-4s | %-6s | %-10s | %-7s |%n";
 
         System.out.format("+----+------+----------+-------+%n");

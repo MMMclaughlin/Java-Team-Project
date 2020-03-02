@@ -6,6 +6,7 @@ public class Menu {
     public static void main(String[] args){
         
     }
+
     public static int intInput(){
 
         /*
@@ -17,6 +18,7 @@ public class Menu {
         int menuChoice = input.nextInt();
         return menuChoice;
     }
+
     public static String itemNameEnter(){
         // this takes and returns a strin
         Scanner input = new Scanner(System.in);

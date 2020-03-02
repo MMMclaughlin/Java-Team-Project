@@ -25,6 +25,7 @@ public class Transaction {
             Item item = session.get(Item.class, id); // Gets the item from the database
             item.setStock(newStock); // Sets the item stock level to the new stock
             session.update(item); // Updates the item's stock in the database
+            session.getTransaction().commit(); // Commit transaction
             session.close();
         }
         catch(HibernateException e)
@@ -32,7 +33,20 @@ public class Transaction {
             e.printStackTrace();
         }
     }
-    public static void deleteItem(Item item){
-
+    
+    public static void deleteItem(int id){
+        try
+        {
+            Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
+            session.beginTransaction(); // Begin the transaction
+            Item item = session.get(Item.class, id); // Gets the item from the database
+            session.delete(item); // Deletes the specific item from the database
+            session.getTransaction().commit(); // Committing the transaction
+            session.close();
+        }
+        catch(HibernateException e)
+        {
+            e.printStackTrace();
+        }
     }
 }

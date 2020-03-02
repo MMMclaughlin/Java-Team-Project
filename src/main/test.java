@@ -10,6 +10,7 @@ public class test{
         Sale sale = new Sale();
         sale.shoppingList.put(item1,1);
         sale.shoppingList.put(item2,1);
+        Transaction.findItem("test");
         sale.sale();
         System.out.println("test");
     }

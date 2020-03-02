@@ -7,7 +7,7 @@
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://cs-db.ncl.ac.uk/csc1035_team40</property>
-        <property name="hibernate.connection.username">b9012721</property>
+        <property name="hibernate.connection.username">csc1035_team40</property>
         <property name="hibernate.connection.password">LavaBan=Hark</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="show_sql">true</property>
@@ -15,8 +15,11 @@
         <property name="hbm2ddl.auto">update </property>
 
         <mapping class="main.Item" /> <!--- Add a new mapping class for a new table in the database -->
+
+        <mapping class="main.Item" />
         <mapping class="main.Menu" />
         <mapping class="main.test" />
+        <mapping class="main.Transaction" />
 
 
     </session-factory>

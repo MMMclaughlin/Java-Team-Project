@@ -1,10 +1,16 @@
 package main;
 
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
 import java.util.Scanner;
 
 public class epos {
     public static void main(String[] args) {
-
+        epos myEPOS = new epos();
+        myEPOS.checkDB();
     }
 
     public void choice() {
@@ -59,6 +65,12 @@ public class epos {
     public void checkDB() {
         // Read all records from DB
         // Formats data into ASCII table
+
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Item> query = builder.createQuery(Item.class);
+        System.out.println(query);
+
 
         System.out.format("+----+------+----------+-------+%n");
         System.out.format("| ID | Name | Category | Price |%n");

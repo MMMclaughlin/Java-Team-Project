@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Sale {
@@ -7,7 +8,7 @@ public class Sale {
     double totalPrice;
     double moneyGiven;
     double changeDue;
-    static int maxNameSize = 5;// this makes formatting the recipet a little easier.
+    static int maxNameSize = 5;// this makes formatting the receipt a little easier.
     public static void main(String[] args){
 
     }
@@ -19,9 +20,9 @@ public class Sale {
                 int id = Menu.intInput();//takes input of next id
                 addToSale(id);//adding new id to sale
             }
-            else {//sale finished creating recipt
-                System.out.println("creating recipt");
-                Recipt(shoppingList);//pass shopping list into recipt
+            else {//sale finished creating receipt
+                System.out.println("creating receipt");
+                Receipt(shoppingList);//pass shopping list into receipt
                 System.out.println("Sale complete");
                 break;
             }
@@ -38,6 +39,7 @@ public class Sale {
         if (item.stock!=0) {//checks item stock is greater than 0
             if (shoppingList.containsKey(item)) {// if item is already in the hashmap, add one to quantity
                     shoppingList.put(item,shoppingList.get(item)+1);
+
             }
             else{//if it is a new item set quantity to one
                 shoppingList.put(item,1);
@@ -48,11 +50,11 @@ public class Sale {
             System.out.println("This item is out of stock.");
         }
         }
-    public void Recipt(HashMap<Item, Integer> shoppingList){
+    public void Receipt(HashMap<Item, Integer> shoppingList){
         System.out.println("please enter how much money was given to calculate change ");
         moneyGiven = Menu.doubleInput();//asks how much money was given
         // this needs to check if the money is enough if not ask for more
-        System.out.println("small buissness");// this can be any buissness name
+        System.out.println("small business");// this can be any business name
         String format = ("%d") + ("%s") + ("%-" + maxNameSize+1 + "s") +("%s") +("%g") +"\n";// this makes the recipt format
         for (Item item:shoppingList.keySet()) {//loop through every item bought
 
@@ -63,4 +65,8 @@ public class Sale {
         changeDue = moneyGiven -totalPrice;//calculate change
         System.out.println(totalPrice);
     }
-}
+
+
+
+
+    }

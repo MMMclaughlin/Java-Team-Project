@@ -14,7 +14,7 @@ public class Transaction {
         session.beginTransaction();// begin transaction
         Item item = (Item)session.get(Item.class,id);//looks up item
         session.close();//closes current session
-        return item;//return found item or null if item wasnt found
+        return item;//return found item or null if item wasn't found
     }
 
     public static void updateStock(int id, int newStock){

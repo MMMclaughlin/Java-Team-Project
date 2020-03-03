@@ -4,7 +4,7 @@ import javax.persistence.*;
 @Entity// this lets hibernate know that this is an entity in the database
 public class Item {
     //idpull ,name,category,perishable,cost,stock,sell_price
-    @Id// this is the id value which will auto genereate when we create a new Item
+    @Id// this is the id value which will auto generate when we create a new Item
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(updatable = false, nullable = false)//sets parameters for id
     private int id;

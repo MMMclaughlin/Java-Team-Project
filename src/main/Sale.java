@@ -72,7 +72,7 @@ public class Sale {
         String format = ("%d") + ("%s") + ("%-" + maxNameSize+1 + "s") +("%s") +("%g") +"\n";// this makes the recipt format
         for (Item item:shoppingList.keySet()) {//loop through every item bought
 
-            System.out.printf(format,shoppingList.get(item),"*",item.getName(),"£",(float)item.getSell_price());
+            System.out.printf(format,shoppingList.get(item),"*",item.getName(),"£", (float)item.getSell_price());
             totalPrice=totalPrice +item.getSell_price();
         }
         System.out.println("Total Price: " + totalPrice);
@@ -86,6 +86,8 @@ public class Sale {
         changeDue = moneyGiven -totalPrice;//calculate change
 
         System.out.println("Your change is " + changeDue);
+        
+        shoppingList = new HashMap<Item, Integer>();
 
     }
 

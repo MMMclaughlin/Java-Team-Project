@@ -13,39 +13,45 @@ public class Sale {
 
     }
     public void sale(){
-        while(true){
-            System.out.println("Please enter a number: \n" +
-                    "1) To buy an item \n" +
-                    "2) To exit and print a receipt");//user input
-            if (Menu.intInput() ==1){
-                System.out.println("enter id for the item");//adding next item
-                int id = Menu.intInput();//takes input of next id
-                addToSale(id);//adding new id to sale
-                System.out.println("Would you like to purchase another item? \n" +
-                        "1) Yes \n" +
-                        "2) No and print receipt ");
-                switch (Menu.intInput()){
-                    case 1:
-                        System.out.println("enter id for the item");//adding next item
-                        id = Menu.intInput();//takes input of next id
-                        addToSale(id);//adding new id to sale
-                        break;
+        while (true){
+            System.out.println("Please enter a number to make a choice: \n" +
+                    "1) To make a purchase \n" +
+                    "2) To checkout and print receipt"); //User input
+            switch (Menu.intInput()){
+                case 1:
+                    System.out.println("enter id for the item");//adding next item
+                    int id = Menu.intInput();//takes input of next id
+                    addToSale(id);//adding new id to sale
+                    System.out.println("Would you like to purchase another item? \n" +
+                            "1) Yes \n" +
+                            "2) Checkout and print receipt ");
+                    switch (Menu.intInput()){
+                        case 1:
+                            System.out.println("enter id for the item");//adding next item
+                            id = Menu.intInput();//takes input of next id
+                            addToSale(id);//adding new id to sale
+                            break;
 
-                    case 2:
-                        System.out.println("creating receipt");
-                        Receipt(shoppingList);//pass shopping list into receipt
-                        System.out.println("Sale complete");
-                        break;
-                }
-            }
-            else {//sale finished creating receipt
-                System.out.println("creating receipt");
-                Receipt(shoppingList);//pass shopping list into receipt
-                System.out.println("Sale complete");
-                break;
+                        case 2:
+                            System.out.println("creating receipt");
+                            Receipt(shoppingList);//pass shopping list into receipt
+                            System.out.println("Sale complete");
+                            break;
+                    }
+                    break;
+
+                case 2:
+                    System.out.println("creating receipt");
+                    Receipt(shoppingList);//pass shopping list into receipt
+                    System.out.println("Sale complete");
+                    break;
+        }
+
+
+
             }
         }
-    }
+
     public static void addToSale(int id){
 
         Item item = Transaction.findItem(id);
@@ -80,8 +86,6 @@ public class Sale {
         moneyGiven = Menu.doubleInput();//asks how much money was given
         // this needs to check if the money is enough if not ask for more
         System.out.println("small business");// this can be any business name
-
-
 
         changeDue = moneyGiven -totalPrice;//calculate change
 

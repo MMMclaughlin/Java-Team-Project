@@ -14,7 +14,9 @@ public class Sale {
     }
     public void sale(){
         while(true){
-            System.out.println("please enter a number 1: to enter another item 2: to exit");//user input
+            System.out.println("Please enter a number: \n" +
+                    "1) To buy an item \n" +
+                    "2) To exit and print a receipt");//user input
             if (Menu.intInput() ==1){
                 System.out.println("enter id for the item");//adding next item
                 int id = Menu.intInput();//takes input of next id
@@ -63,7 +65,9 @@ public class Sale {
         }
 
         changeDue = moneyGiven -totalPrice;//calculate change
-        System.out.println(totalPrice);
+        System.out.println("Total Price: " + totalPrice);
+        System.out.println("Your change is " + changeDue);
+
     }
 
 

@@ -1,7 +1,6 @@
 package main;
 
 import java.util.HashMap;
-import javax.persistence.Entity;
 public class test{
 
     // this is a file for running a specific data set or queries and can be edited freely.

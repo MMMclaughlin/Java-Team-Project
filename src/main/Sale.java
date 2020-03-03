@@ -30,13 +30,22 @@ public class Sale {
     public static void addToSale(int id){
 
         Item item = Transaction.findItem(id);
-        if (item != null) {//checks item exists
-            if (shoppingList.containsKey(item)) {// if item is already in the list, add one to quantity
+        if (item == null){// if item does not exist in db
+            System.out.println("id not found");
+            return;
+        }
+        //if item does exist
+        if (item.stock!=0) {//checks item stock is greater than 0
+            if (shoppingList.containsKey(item)) {// if item is already in the hashmap, add one to quantity
                     shoppingList.put(item,shoppingList.get(item)+1);
             }
             else{//if it is a new item set quantity to one
                 shoppingList.put(item,1);
             }
+            Transaction.updateStock(id, item.stock-1);//update stock in db
+        }
+        else{
+            System.out.println("This item is out of stock.");
         }
         }
     public void Recipt(HashMap<Item, Integer> shoppingList){

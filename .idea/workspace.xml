@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_48.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assessment-3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assessment-3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/epos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/epos.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +42,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="csc1035_team40: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="TeamProject" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="csc1035_team40: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="Item: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -147,6 +144,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 1b78d0d0524b682519a47e50303c35254c962f84
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -158,21 +157,11 @@
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Hibernate/src/main/Transactions.java" />
-        <option value="$PROJECT_DIR$/Hibernate/src/main/test.java" />
-        <option value="$PROJECT_DIR$/Hibernate/src/main/Transaction.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/HibernateUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/Id.java" />
-        <option value="$PROJECT_DIR$/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/main/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/Sale.java" />
-        <option value="$PROJECT_DIR$/src/main/test.java" />
-      </list>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Intellij\project-3\.idea" />
+      </set>
     </option>
   </component>
   <component name="MavenImportPreferences">
@@ -188,6 +177,7 @@
     <option name="height" value="1407" />
   </component>
   <component name="ProjectId" id="1YIdL0r7Nvhzs6Wqirm7qdrZ7zj" />
+<<<<<<< HEAD
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -235,6 +225,8 @@
       <pane id="Scope" />
     </panes>
   </component>
+=======
+>>>>>>> 1b78d0d0524b682519a47e50303c35254c962f84
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -251,10 +243,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysql-connector-java-5.1.48" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.side.proportion" value="0.3494253" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -284,7 +279,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.epos">
     <configuration name="Item" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Item" />
       <module name="assessment-3" />
@@ -324,6 +319,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="epos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.epos" />
+      <module name="assessment-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.test" />
       <module name="assessment-3" />
@@ -339,6 +347,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.epos" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.Sale" />
         <item itemvalue="Application.Transaction" />
@@ -397,6 +406,7 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="10411000" />
   </component>
@@ -485,6 +495,20 @@
         <option value="3" />
         <option value="1" />
       </list>
+=======
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+>>>>>>> 1b78d0d0524b682519a47e50303c35254c962f84
     </option>
   </component>
   <component name="VcsManagerConfiguration">
@@ -535,6 +559,7 @@
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" />
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b832af31-f364-4d16-831b-020e6f9431ed/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
@@ -718,4 +743,6 @@
       </state>
     </states>
   </component>
+=======
+>>>>>>> 1b78d0d0524b682519a47e50303c35254c962f84
 </project>

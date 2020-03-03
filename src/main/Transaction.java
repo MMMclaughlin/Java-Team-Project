@@ -49,4 +49,11 @@ public class Transaction {
             e.printStackTrace();
         }
     }
+    public static void insertItem(Item item){
+        Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
+        session.beginTransaction(); // Begin the transaction
+        session.save(item);
+        session.getTransaction().commit(); // Committing the transaction
+        session.close();
+    }
 }

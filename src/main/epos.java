@@ -65,7 +65,6 @@ public class epos {
     public void checkDB() {
         // Read all records from DB
         // Formats data into ASCII table
-
         Session session = HibernateUtil.getSessionFactory().openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Item> query = builder.createQuery(Item.class);

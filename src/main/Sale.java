@@ -50,7 +50,7 @@ public class Sale {
         }
     public void Recipt(HashMap<Item, Integer> shoppingList){
         System.out.println("please enter how much money was given to calculate change ");
-        moneyGiven = Menu.intInput();//asks how much money was given
+        moneyGiven = Menu.doubleInput();//asks how much money was given
         // this needs to check if the money is enough if not ask for more
         System.out.println("small buissness");// this can be any buissness name
         String format = ("%d") + ("%s") + ("%-" + maxNameSize+1 + "s") +("%s") +("%g") +"\n";// this makes the recipt format

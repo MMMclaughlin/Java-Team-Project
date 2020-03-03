@@ -17,8 +17,19 @@ public class Menu {
         int menuChoice = input.nextInt();
         return menuChoice;
     }
+
+    /** Takes user input from the console.
+     *
+     * @return the user's input as a double
+     */
+    public static double doubleInput()
+    {
+        Scanner input = new Scanner(System.in);
+        return input.nextDouble();
+    }
+
     public static String itemNameEnter(){
-        // this takes and returns a strin
+        // this takes and returns a string
         Scanner input = new Scanner(System.in);
         String itemName = input.nextLine();
         return itemName;

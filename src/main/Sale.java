@@ -14,9 +14,11 @@ public class Sale {
     }
     public void sale(){
         while(true){
-            System.out.println("please enter a number 1: to enter another item 2: to exit");//user input
+            System.out.println("Please enter a number to make a choice \n" +
+                    "1) Make a purchase \n" +
+                    "2) Checkout and generate receipt");//user input
             if (Menu.intInput() ==1){
-                System.out.println("enter id for the item");//adding next item
+                System.out.println("Enter the id of the item you want to purchase: ");//adding to "basket"
                 int id = Menu.intInput();//takes input of next id
                 addToSale(id);//adding new id to sale
             }

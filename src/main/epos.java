@@ -2,9 +2,12 @@ package main;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
+import org.hibernate.query.Query;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import java.util.List;
 import java.util.Scanner;
 
 public class epos {
@@ -68,13 +71,17 @@ public class epos {
         Session session = HibernateUtil.getSessionFactory().openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Item> query = builder.createQuery(Item.class);
-        System.out.println(query);
-
+        Root<Item> root = query.from(Item.class);
+        query.select(root);
+        Query<Item> query2 = session.createQuery(query);
+        List<Item> results = query2.getResultList();
 
         System.out.format("+----+------+----------+-------+%n");
         System.out.format("| ID | Name | Category | Price |%n");
         System.out.format("+----+------+----------+-------+%n");
-
+        for (Item item:results) {
+            System.out.println(item.name);
+        }
         // f
         String leftAlignFormat = "| %-4s | %-6s | %-10s | %-7s |%n";
 

@@ -83,7 +83,7 @@ To follow good standards of development, you **must** include the following:
 
 - An Interface to communicate with the program
 - Use appropriate collections and algorithms when manipulating information
-- Follow CRUD when manipulating the database with Hibernate
+- Follow main.CRUD when manipulating the database with Hibernate
 - Include JavaDoc comments in the code so that documentation can be generated
 - Use version control, an appropriate GitFlow, and appropriate commit messages. Commit messages will be checked for
 contribution to the team

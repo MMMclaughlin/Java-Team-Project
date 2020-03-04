@@ -2,14 +2,15 @@ package main;
 
 import org.hibernate.*;
 import javax.persistence.Entity;
-public class Transaction {
+public class Transaction implements CRUD{
     //establish database connection here
 
     public static void main(String[] args){
 
-    }
+        }
 
-    public static Item findItem(int id){
+    @Override
+    public Item findItem(int id) {
         Session session = HibernateUtil.getSessionFactory().openSession();//creates a session
         session.beginTransaction();// begin transaction
         Item item = (Item)session.get(Item.class,id);//looks up item
@@ -17,7 +18,8 @@ public class Transaction {
         return item;//return found item or null if item wasn't found
     }
 
-    public static void updateStock(int id, int newStock){
+    @Override
+    public void updateStock(int id, int newStock) {
         try
         {
             Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
@@ -32,9 +34,12 @@ public class Transaction {
         {
             e.printStackTrace();
         }
+
     }
-    
-    public static void deleteItem(int id){
+
+    @Override
+    public void deleteItem(int id) {
+
         try
         {
             Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
@@ -48,12 +53,18 @@ public class Transaction {
         {
             e.printStackTrace();
         }
+
     }
-    public static void insertItem(Item item){
+
+    @Override
+    public void insertItem(Item item) {
+
         Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
         session.beginTransaction(); // Begin the transaction
         session.save(item);
         session.getTransaction().commit(); // Committing the transaction
         session.close();
+
     }
 }
+

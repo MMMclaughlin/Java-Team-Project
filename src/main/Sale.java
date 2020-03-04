@@ -9,6 +9,7 @@ public class Sale {
     double moneyGiven;
     double changeDue;
     static int maxNameSize = 5;// this makes formatting the receipt a little easier.
+    static Transaction tx = new Transaction();
     public static void main(String[] args){
 
     }
@@ -32,7 +33,7 @@ public class Sale {
     }
     public static void addToSale(int id){
 
-        Item item = Transaction.findItem(id);
+        Item item = tx.findItem(id);
         if (item == null){// if item does not exist in db
             System.out.println("id not found");
             return;
@@ -46,7 +47,7 @@ public class Sale {
             else{//if it is a new item set quantity to one
                 shoppingList.put(item,1);
             }
-            Transaction.updateStock(id, item.stock-1);//update stock in db
+            tx.updateStock(id, item.stock-1);//update stock in db
         }
         else{
             System.out.println("This item is out of stock.");

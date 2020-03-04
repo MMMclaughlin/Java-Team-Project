@@ -46,6 +46,8 @@ public class epos {
         switch (finalChoice){
             case 1:
                 System.out.println("NEW SALE");
+                // Displays database to user.
+                checkDB();
                 newSale();
             case 2:
                 System.out.println("VIEW DB");
@@ -57,8 +59,6 @@ public class epos {
     }
 
     public void newSale() {
-        // Displays database to user.
-        checkDB();
         // Creates new sale object and calls constructor.
         Sale sale = new Sale();
         sale.sale();
@@ -69,7 +69,7 @@ public class epos {
         // Formats data into ASCII table
         Session session = HibernateUtil.getSessionFactory().openSession();
         session.beginTransaction();
-        Query query = session.createQuery("FROM Item where stock != 0 order by category ");
+        Query query = session.createQuery("FROM Item where stock != 0 order by id ");
         List results = query.getResultList();
         session.getTransaction().commit();
 
@@ -90,7 +90,9 @@ public class epos {
     }
 
     public void interactDB() {
+        System.out.println("Database in Current form:");
         checkDB();
+
         // use checkDB to show DB
         // Use while to ask to add/remove/alter
         // Continue until all changes made.

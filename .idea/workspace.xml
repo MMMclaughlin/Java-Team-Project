@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="Spelling updates">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_3_10_5_3_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6__2_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6__2_.xml" afterDir="false" />
+    <list default="true" id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assessment-3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assessment-3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/epos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/epos.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -216,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583161800649</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="checkDB complete">
+      <created>1583322931459</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583322931459</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +265,8 @@
     <MESSAGE value="Set up most classes, created a sale loop and recipt with a hashmap. This does not work with db rn.&#10;db connection,query,insert and data all need creating in transactions?" />
     <MESSAGE value="Updateed transaction class" />
     <MESSAGE value="Spelling updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spelling updates" />
+    <MESSAGE value="checkDB complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkDB complete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="800" height="679" key="#Project_Structure" />

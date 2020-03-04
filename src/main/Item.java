@@ -1,7 +1,7 @@
 package main;
 
 import javax.persistence.*;
-@Entity// this lets hibernate know that this is an entity in the database
+@Entity (name = "Item")// this lets hibernate know that this is an entity in the database
 public class Item {
     //idpull ,name,category,perishable,cost,stock,sell_price
     @Id// this is the id value which will auto generate when we create a new Item

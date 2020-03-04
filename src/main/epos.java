@@ -3,8 +3,10 @@ package main;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 
+import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import java.util.List;
 import java.util.Scanner;
 
 public class epos {
@@ -66,19 +68,24 @@ public class epos {
         // Read all records from DB
         // Formats data into ASCII table
         Session session = HibernateUtil.getSessionFactory().openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Item> query = builder.createQuery(Item.class);
-        System.out.println(query);
+        session.beginTransaction();
+        Query query = session.createQuery("FROM Item where stock != 0 order by category ");
+        List results = query.getResultList();
+        session.getTransaction().commit();
 
+        System.out.format("+-----+--------------------------------+-----------------+------------+%n");
+        System.out.format("| ID  | Name                           | Category        | Price      |%n");
+        System.out.format("+-----+--------------------------------+-----------------+------------+%n");
 
-        System.out.format("+----+------+----------+-------+%n");
-        System.out.format("| ID | Name | Category | Price |%n");
-        System.out.format("+----+------+----------+-------+%n");
+        String leftAlignFormat = "| %-3s | %-30s | %-15s | %-10s |%n";
 
-        // f
-        String leftAlignFormat = "| %-4s | %-6s | %-10s | %-7s |%n";
+        for (Object i : results) {
+            Item thisItem = (Item) i;
+            System.out.format(leftAlignFormat, thisItem.getId(), thisItem.getName(), thisItem.getCategory(),
+                    thisItem.getSell_price());
+        }
 
-        System.out.format("+----+------+----------+-------+%n");
+        System.out.format("+-----+--------------------------------+-----------------+------------+%n");
 
     }
 

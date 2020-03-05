@@ -24,9 +24,12 @@ public class Item {
         this.sell_price = sell_price;
     }
 
-    public static void main(String[] args){
-
+    @Override
+    public String toString() {
+        return "ID: " + id + "\nName: " + name + "\nCategory: " + category + "\nPerishable: " + perishable +
+                "\nCost: " + cost + "\nstock: " + stock + "\nPrice: " + sell_price;
     }
+
 
     public Item() {
 

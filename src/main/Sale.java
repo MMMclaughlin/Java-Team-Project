@@ -24,7 +24,7 @@ public class Sale {
                 addToSale(id);//adding new id to sale
             }
             else {//sale finished creating receipt
-                System.out.println("creating receipt");
+                System.out.println("Generating receipt");
                 Receipt(shoppingList);//pass shopping list into receipt
                 System.out.println("Sale complete");
                 break;
@@ -54,19 +54,36 @@ public class Sale {
         }
     }
     public void Receipt(HashMap<Item, Integer> shoppingList){
-        System.out.println("please enter how much money was given to calculate change ");
-        moneyGiven = Menu.doubleInput();//asks how much money was given
-        // this needs to check if the money is enough if not ask for more
-        System.out.println("small business");// this can be any business name
-        String format = ("%d") + ("%s") + ("%-" + maxNameSize+1 + "s") +("%s") +("%g") +"\n";// this makes the recipt format
+        String format = ("%d") + ("%s") + ("%-" + maxNameSize+1 + "s") +("%s") +("%g") +"\n";// this makes the receipt format
         for (Item item:shoppingList.keySet()) {//loop through every item bought
-
+            //System.out.println("this is broken");
             System.out.printf(format,shoppingList.get(item),"*",item.getName(),"£",(float)item.getSell_price());
             totalPrice=totalPrice +item.getSell_price();
         }
+        System.out.println("Your total is: £" + totalPrice);
+        System.out.println("Please enter how much money was given to calculate change: ");
+        moneyGiven = Menu.doubleInput();//asks how much money was given
+        // this needs to check if the money is enough if not ask for more
 
-        changeDue = moneyGiven -totalPrice;//calculate change
-        System.out.println(totalPrice);
+        if(moneyGiven < totalPrice){
+            System.out.println("Your price is: £" + totalPrice + " Please give the correct amount: ");
+            moneyGiven = Menu.doubleInput();//asks how much money was given
+            System.out.println("You have paid: £" + moneyGiven);
+            changeDue = moneyGiven -totalPrice;//calculate change
+            System.out.println("Your change is: £" + changeDue);
+        } else if(moneyGiven == totalPrice){
+            System.out.println("You have paid: £" + moneyGiven);
+            //changeDue = moneyGiven -totalPrice;//calculate change
+            System.out.println("Your change is: £0" + changeDue);
+        }else {
+            System.out.println("You have paid: £" + moneyGiven);
+            changeDue = moneyGiven -totalPrice;//calculate change
+            System.out.println("Your change is: £" + changeDue);
+        }
+
+        System.out.println("Small business");// this can be any business name
+
+
     }
 
 

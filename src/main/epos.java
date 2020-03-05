@@ -49,12 +49,15 @@ public class epos {
                 // Displays database to user.
                 checkDB();
                 newSale();
+                return;
             case 2:
                 System.out.println("VIEW DB");
                 checkDB();
+                return;
             case 3:
                 System.out.println("ALTER DB");
                 interactDB();
+                return;
         }
     }
 
@@ -70,9 +73,8 @@ public class epos {
         Session session = HibernateUtil.getSessionFactory().openSession();
         session.beginTransaction();
         Query query = session.createQuery("FROM Item where stock != 0 order by id ");
-        List results = query.getResultList();
+        List results = query.getResultList();// this prints to command line a hibernate thing (maybe theres a way to make it silent
         session.getTransaction().commit();
-
         System.out.format("+-----+--------------------------------+-----------------+------------+%n");
         System.out.format("| ID  | Name                           | Category        | Price      |%n");
         System.out.format("+-----+--------------------------------+-----------------+------------+%n");

@@ -5,17 +5,24 @@ import javax.persistence.*;
 public class Item {
     //idpull ,name,category,perishable,cost,stock,sell_price
     @Id// this is the id value which will auto generate when we create a new Item
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(updatable = false, nullable = false)//sets parameters for id
     private int id;
+    @Column
     String name;
+    @Column
     String category;
-    Boolean perishable;
+    @Column
+    int perishable;
+    @Column
     double cost;
+    @Column
     int stock;
+    @Column
     double sell_price;
-    public Item(int id, String name, String category, Boolean perishable, double cost, int stock, double sell_price) {
-        this.id = id;
+
+    public Item(String name, String category, int perishable, double cost, int stock, double sell_price) {
+        //this.id = id;
         this.name = name;
         this.category = category;
         this.perishable = perishable;
@@ -56,11 +63,11 @@ public class Item {
         this.category = category;
     }
 
-    public Boolean getPerishable() {
+    public int getPerishable() {
         return perishable;
     }
 
-    public void setPerishable(Boolean perishable) {
+    public void setPerishable(int perishable) {
         this.perishable = perishable;
     }
 

@@ -60,16 +60,16 @@ public class Sale {
     public void Receipt(HashMap<Item, Integer> shoppingList) {
         moneyGiven = Menu.doubleInput();//asks how much money was given
         System.out.println("Please enter \n 1: to print recipt to command line and save it to a seperate file \2 print the recipt to command line and not to a seperate file");
-        int reciptchoice = Menu.intInput();
+        int receiptChoice = Menu.intInput();
         try {
-            FileWriter fileWrite = new FileWriter("recipt.txt");//opens file
+            FileWriter fileWrite = new FileWriter("receipt.txt");//opens file
             PrintWriter printLine = new PrintWriter(fileWrite);//write to file
             // this needs to check if the money is enough if not ask for more
             System.out.println("small business");// this can be any business name
             String format = ("%d") + ("%s") + ("%-" + maxNameSize + 1 + "s") + ("%s") + ("%g") + "\n";// this makes the recipt format
             for (Item item : shoppingList.keySet()) {//loop through every item bought
 
-                if (reciptchoice == 1) {// if they want an external receipt
+                if (receiptChoice == 1) {// if they want an external receipt
                     System.out.println("reached");
                     printLine.printf(format, shoppingList.get(item), "*", item.getName(), "£", (float) item.getSell_price(),"\n");// write to the file if they want an external recipt
                 }

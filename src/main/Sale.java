@@ -60,7 +60,7 @@ public class Sale {
         System.out.println("small business");// this can be any business name
         String format = ("%d") + ("%s") + ("%-" + maxNameSize+1 + "s") +("%s") +("%g") +"\n";// this makes the recipt format
         for (Item item:shoppingList.keySet()) {//loop through every item bought
-
+            System.out.println("this is broken");
             System.out.printf(format,shoppingList.get(item),"*",item.getName(),"£",(float)item.getSell_price());
             totalPrice=totalPrice +item.getSell_price();
         }

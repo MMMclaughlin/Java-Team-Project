@@ -28,7 +28,7 @@ public class Sale {
                 int id = Menu.intInput();//takes input of next id
                 addToSale(id);//adding new id to sale
             } else {//sale finished creating receipt
-                System.out.println("creating receipt");
+                System.out.println("Generating receipt");
                 Receipt(shoppingList);//pass shopping list into receipt
                 System.out.println("Sale complete");
                 break;

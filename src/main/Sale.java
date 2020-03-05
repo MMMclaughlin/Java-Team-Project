@@ -69,12 +69,13 @@ public class Sale {
             System.out.println("small business");// this can be any business name
             String format = ("%d") + ("%s") + ("%-" + maxNameSize + 1 + "s") + ("%s") + ("%g") + "\n";// this makes the recipt format
             for (Item item : shoppingList.keySet()) {//loop through every item bought
+
                 if (reciptchoice == 1) {// if they want an external receipt
                     System.out.println("reached");
-                    printLine.printf("test");
                     printLine.printf(format, shoppingList.get(item), "*", item.getName(), "£", (float) item.getSell_price(),"\n");// write to the file if they want an external recipt
                 }
                 totalPrice = totalPrice + item.getSell_price();
+                System.out.printf(format, shoppingList.get(item), "*", item.getName(), "£", (float) item.getSell_price(),"\n");
             }
             printLine.close();
 

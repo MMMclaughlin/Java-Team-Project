@@ -44,14 +44,14 @@ public class Sale {
             return;
         }
         //if item does exist
-        if (item.stock != 0) {//checks item stock is greater than 0
+        if (item.getStock() != 0) {//checks item stock is greater than 0
             if (shoppingList.containsKey(item)) {// if item is already in the hashmap, add one to quantity
                 shoppingList.put(item, shoppingList.get(item) + 1);
 
             } else {//if it is a new item set quantity to one
                 shoppingList.put(item, 1);
             }
-            tx.updateStock(id, item.stock - 1);//update stock in db
+            tx.updateStock(id, item.getStock() - 1);//update stock in db
         } else {
             System.out.println("This item is out of stock.");
         }

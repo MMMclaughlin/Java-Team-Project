@@ -241,9 +241,10 @@ public class epos {
 
                 Item thisItem = new Item(case4Name, case4Category, intPerishable, doubleCost, IntStock, doublePrice);
                 System.out.println(thisItem.toString());
-                Item testItem = new Item("sdfg", "sdfg", 1, 12.2, 12, 123);
-                System.out.println(testItem.toString());
-                thisTransaction.insertItem(testItem);
+                thisTransaction.insertItem(thisItem);
+
+            case 5:
+                System.exit(1);
         }
 
         // use checkDB to show DB

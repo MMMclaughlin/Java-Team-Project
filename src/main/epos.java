@@ -135,7 +135,7 @@ public class epos {
                 }
 
                 System.out.println(thisTransaction.findItem(searchID).toString());
-                return;
+                break;
 
             case 2:
                 System.out.println("UPDATE STOCK");
@@ -163,10 +163,76 @@ public class epos {
                 }
 
                 thisTransaction.updateStock(case2ID, case2NewStock);
-                return;
+                break;
 
             case 3:
-                
+                System.out.println("DELETE ITEM");
+                System.out.println("Enter ID of item to delete:");
+                Scanner case3Input = new Scanner(System.in);
+                String case3Choice = case3Input.nextLine();
+
+                try {
+                    int case3ID = Integer.parseInt(case3Choice);
+                    thisTransaction.deleteItem(case3ID);
+                } catch (NumberFormatException e) {
+                    System.out.println("### Choice must be an integer. Exit without change. ###");
+                    break;
+                }
+                break;
+
+            case 4:
+                System.out.println("INSERT NEW ITEM");
+                Scanner case4Input = new Scanner(System.in);
+
+                System.out.println("Enter Name of new item:");
+                String case4Name = case4Input.nextLine();
+                System.out.println("Enter category of new item:");
+                String case4Category = case4Input.nextLine();
+                System.out.println("Enter 1 if perishable 0 if not for new item:");
+                String case4Perishable = case4Input.nextLine();
+                System.out.println("Enter cost of new item:");
+                String case4Cost = case4Input.nextLine();
+                System.out.println("Enter stock count of new item:");
+                String case4Stock = case4Input.nextLine();
+                System.out.println("Enter sell price of new item:");
+                String case4Price = case4Input.nextLine();
+
+                int intPerishable = 1;
+                try {
+                    intPerishable = Integer.parseInt(case4Perishable);
+
+                    if (intPerishable > 1 || intPerishable < 0) {
+                        System.out.println("### Must be 1 or 0. Default to 1. ###");
+                    }
+
+                } catch (NumberFormatException e) {
+                    System.out.println("### Choice must be true or false. Default to true. ###");
+                }
+
+                double doubleCost = 0;
+                try {
+                    doubleCost = Double.parseDouble(case4Cost);
+                } catch (NumberFormatException e) {
+                    System.out.println("### Choice must be decimal number. Default to 0. ###");
+                }
+
+                int IntStock = 0;
+                try {
+                    IntStock = Integer.parseInt(case4Stock);
+                } catch (NumberFormatException e) {
+                    System.out.println("### Choice must be integer. Default to 0. ###");
+                }
+
+                double doublePrice = 0;
+                try {
+                    doublePrice = Double.parseDouble(case4Price);
+                } catch (NumberFormatException e) {
+                    System.out.println("### Choice must be decimal number. Default to 0. ###");
+                }
+
+                Item thisItem = new Item(case4Name, case4Category, intPerishable, doubleCost, IntStock, doublePrice);
+                System.out.println(thisItem.toString());
+                thisTransaction.insertItem(thisItem);
         }
 
         // use checkDB to show DB

@@ -20,6 +20,7 @@
         <mapping class="main.Menu" />
         <mapping class="main.test" />
         <mapping class="main.Transaction" />
+        <mapping class="main.epos" />
 
 
     </session-factory>

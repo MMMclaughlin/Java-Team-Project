@@ -58,7 +58,6 @@ public class Sale {
     }
 
     public void Receipt(HashMap<Item, Integer> shoppingList) {
-        System.out.println("please enter how much money was given to calculate change ");
         moneyGiven = Menu.doubleInput();//asks how much money was given
         System.out.println("Please enter \n 1: to print recipt to command line and save it to a seperate file \2 print the recipt to command line and not to a seperate file");
         int reciptchoice = Menu.intInput();
@@ -77,11 +76,28 @@ public class Sale {
                 totalPrice = totalPrice + item.getSell_price();
                 System.out.printf(format, shoppingList.get(item), "*", item.getName(), "£", (float) item.getSell_price(),"\n");
             }
-            printLine.close();
+            System.out.println("Your total is: £" + totalPrice);
+            System.out.println("Please enter how much money was given to calculate change: ");
+            moneyGiven = Menu.doubleInput();//asks how much money was given
+            // this needs to check if the money is enough if not ask for more
 
-            changeDue = moneyGiven - totalPrice;//calculate change
-            System.out.println(totalPrice);
+            if(moneyGiven < totalPrice){
+                System.out.println("Your price is: £" + totalPrice + " Please give the correct amount: ");
+                moneyGiven = Menu.doubleInput();//asks how much money was given
+                System.out.println("You have paid: £" + moneyGiven);
+                changeDue = moneyGiven -totalPrice;//calculate change
+                System.out.println("Your change is: £" + changeDue);
+            } else if(moneyGiven == totalPrice){
+                System.out.println("You have paid: £" + moneyGiven);
+                //changeDue = moneyGiven -totalPrice;//calculate change
+                System.out.println("Your change is: £0" + changeDue);
+            }else {
+                System.out.println("You have paid: £" + moneyGiven);
+                changeDue = moneyGiven -totalPrice;//calculate change
+                System.out.println("Your change is: £" + changeDue);
+            }
 
+            System.out.println("Small business");// this can be any business name
         } catch (IOException e) {
             System.out.println("sorry currently external recipts are unavailable due to lack of file access");
         }

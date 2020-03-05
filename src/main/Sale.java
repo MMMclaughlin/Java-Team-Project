@@ -99,7 +99,7 @@ public class Sale {
 
             System.out.println("Small business");// this can be any business name
         } catch (IOException e) {
-            System.out.println("sorry currently external recipts are unavailable due to lack of file access");
+            System.out.println("Sorry, currently external receipts are unavailable due to lack of file access.");
         }
 
 

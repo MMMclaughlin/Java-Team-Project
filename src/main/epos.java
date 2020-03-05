@@ -134,7 +134,12 @@ public class epos {
                     System.out.println("### Choice must be an integer. Default to ID = 1. ###");
                 }
 
-                System.out.println(thisTransaction.findItem(searchID).toString());
+                try {
+                    System.out.println(thisTransaction.findItem(searchID).toString());
+                } catch (NullPointerException e) {
+                    System.out.println("### Invalid ID Entered. ###");
+                }
+
                 break;
 
             case 2:
@@ -160,6 +165,8 @@ public class epos {
                     case2NewStock = Integer.parseInt(case2EnteredStock);
                 } catch (NumberFormatException e) {
                     System.out.println("### Choice must be an integer. Default to 0. ###");
+                } catch (NullPointerException e) {
+                    System.out.println("### Invalid ID entered. ###");
                 }
 
                 thisTransaction.updateStock(case2ID, case2NewStock);
@@ -177,6 +184,8 @@ public class epos {
                 } catch (NumberFormatException e) {
                     System.out.println("### Choice must be an integer. Exit without change. ###");
                     break;
+                } catch (NullPointerException e) {
+                    System.out.println("### Invalid ID entered. ###");
                 }
                 break;
 
@@ -232,7 +241,9 @@ public class epos {
 
                 Item thisItem = new Item(case4Name, case4Category, intPerishable, doubleCost, IntStock, doublePrice);
                 System.out.println(thisItem.toString());
-                thisTransaction.insertItem(thisItem);
+                Item testItem = new Item("sdfg", "sdfg", 1, 12.2, 12, 123);
+                System.out.println(testItem.toString());
+                thisTransaction.insertItem(testItem);
         }
 
         // use checkDB to show DB

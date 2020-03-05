@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/epos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/epos.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +72,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assessment-2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -199,7 +197,8 @@
       <workItem from="1583240688823" duration="1333000" />
       <workItem from="1583244951291" duration="262000" />
       <workItem from="1583342551146" duration="649000" />
-      <workItem from="1583414795419" duration="5563000" />
+      <workItem from="1583414795419" duration="5804000" />
+      <workItem from="1583424625193" duration="2893000" />
     </task>
     <task id="LOCAL-00001" summary="Set up most classes, created a sale loop and recipt with a hashmap. This does not work with db rn.&#10;db connection,query,insert and data all need creating in transactions?">
       <created>1582768423687</created>
@@ -236,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583417587776</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="epos interactDB case 3 complete, 4 nearly done.&#10;Showing DB connection issue.">
+      <created>1583420599373</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583420599373</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +292,8 @@
     <MESSAGE value="checkDB complete" />
     <MESSAGE value="epos updates" />
     <MESSAGE value="epos interactDB cases 1 and 2 complete." />
-    <option name="LAST_COMMIT_MESSAGE" value="epos interactDB cases 1 and 2 complete." />
+    <MESSAGE value="epos interactDB case 3 complete, 4 nearly done.&#10;Showing DB connection issue." />
+    <option name="LAST_COMMIT_MESSAGE" value="epos interactDB case 3 complete, 4 nearly done.&#10;Showing DB connection issue." />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="800" height="679" key="#Project_Structure" />

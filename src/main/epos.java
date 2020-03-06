@@ -11,7 +11,22 @@ import java.util.Scanner;
 public class epos {
     public static void main(String[] args) {
         epos myEPOS = new epos();
-        myEPOS.interactDB();
+        myEPOS.choice();
+
+        boolean toContinue = true;
+        while (toContinue) {
+            Scanner continueScanner = new Scanner(System.in);
+            System.out.println("Do you wish to perform another action? Enter only Y or N.");
+            String entered = continueScanner.nextLine().toUpperCase();
+
+            if (entered.equals("Y")) {
+                myEPOS.choice();
+            } else {
+                toContinue = false;
+                System.out.println("Exit");
+                System.exit(1);
+            }
+        }
     }
 
     public void choice() {

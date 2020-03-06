@@ -200,7 +200,7 @@
       <workItem from="1583342551146" duration="649000" />
       <workItem from="1583414795419" duration="5804000" />
       <workItem from="1583424625193" duration="7248000" />
-      <workItem from="1583501814346" duration="5146000" />
+      <workItem from="1583501814346" duration="7281000" />
     </task>
     <task id="LOCAL-00001" summary="Set up most classes, created a sale loop and recipt with a hashmap. This does not work with db rn.&#10;db connection,query,insert and data all need creating in transactions?">
       <created>1582768423687</created>
@@ -258,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583434229593</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Receipt method updated to output ASCII table to command line and file.">
+      <created>1583507116091</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583507116091</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +318,8 @@
     <MESSAGE value="epos interactDB case 3 complete, 4 nearly done.&#10;Showing DB connection issue." />
     <MESSAGE value="epos interactDB cases updated to handle more errors." />
     <MESSAGE value="Item class updated with @ positions. Cases 4 and 5 mostly finished in epos class. Some error catching and testing to do." />
-    <option name="LAST_COMMIT_MESSAGE" value="Item class updated with @ positions. Cases 4 and 5 mostly finished in epos class. Some error catching and testing to do." />
+    <MESSAGE value="Receipt method updated to output ASCII table to command line and file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Receipt method updated to output ASCII table to command line and file." />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="800" height="679" key="#Project_Structure" />

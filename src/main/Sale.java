@@ -58,11 +58,13 @@ public class Sale {
     }
 
     public void Receipt(HashMap<Item, Integer> shoppingList) {
+        // Asks user if they want to write the receipt to a file.
         System.out.println("Please enter \n 1: to print receipt to command line and save it to a separate file \n " +
                 "2: print the receipt to command line and not to a separate file");
         int receiptChoice = Menu.intInput();
 
-        for (Item item : shoppingList.keySet()) { //loop through every item bought
+        // Iterates through shopping list to calculate total price.
+        for (Item item : shoppingList.keySet()) {
             totalPrice = totalPrice + item.getSell_price();
         }
         System.out.println("Your total is: £" + totalPrice);
@@ -70,34 +72,38 @@ public class Sale {
         System.out.println("Enter money given: ");
         moneyGiven = Menu.doubleInput();//asks how much money was given
 
-        if(moneyGiven < totalPrice){
+        // Keeps asking for correct amount of money if what's entered is less that the total cost.
+        while (moneyGiven < totalPrice) {
             System.out.println("Your price is: £" + totalPrice + " Please give the correct amount: ");
             moneyGiven = Menu.doubleInput();//asks how much money was given
-            changeDue = moneyGiven - totalPrice;//calculate change
-        } else if(moneyGiven == totalPrice){
-            changeDue = moneyGiven - totalPrice;//calculate change
-        }else {
-            changeDue = moneyGiven - totalPrice;//calculate change
         }
 
-        System.out.println("\n~~~~~~ Thank You for Shopping at Tricky Trinkets ~~~~~~~");// this can be any business name
+        // Calculates change due.
+        changeDue = moneyGiven - totalPrice;
+
+        // Head of receipt.
+        System.out.println("\n~~~~~~ Thank You for Shopping at Tricky Trinkets ~~~~~~~");
         System.out.format("+--------------------------------+----------+----------+%n");
         System.out.format("| Item                           | Quantity | Price    |%n");
         System.out.format("+--------------------------------+----------+----------+%n");
 
+        // Format for body of receipt.
         String leftAlignFormat = "| %-30s | %-8s | %-8s | %n";
 
+        // Iterates through items in shopping list and adds them to receipt body.
         for (Item item : shoppingList.keySet()) {
-            System.out.format(leftAlignFormat, item.getName(), shoppingList.get(item), item.getSell_price());
+            System.out.format(leftAlignFormat, item.getName(), shoppingList.get(item), "£" + item.getSell_price());
         }
 
+        // Foot of receipt with total price, money given and change due.
         System.out.format("+--------------------------------+----------+----------+%n");
         String totalPriceFormat = "| %-41s | %-8s | %n";
-        System.out.format(totalPriceFormat, "Total Price", totalPrice);
-        System.out.format(totalPriceFormat, "Money Given", moneyGiven);
-        System.out.format(totalPriceFormat, "Change Due", changeDue);
+        System.out.format(totalPriceFormat, "Total Price", "£" + totalPrice);
+        System.out.format(totalPriceFormat, "Money Given", "£" + moneyGiven);
+        System.out.format(totalPriceFormat, "Change Due", "£" + changeDue);
         System.out.format("+--------------------------------+----------+----------+%n");
 
+        // Writes receipt to file, content and format exactly the same as above.
         if (receiptChoice == 1) {
             try {
                 FileWriter fileWrite = new FileWriter("receipt.txt");//opens file
@@ -110,18 +116,20 @@ public class Sale {
                 String leftAlignFormat2 = "| %-30s | %-8s | %-8s | %n";
 
                 for (Item item : shoppingList.keySet()) {
-                    printLine.printf(leftAlignFormat2, item.getName(), shoppingList.get(item), item.getSell_price());
+                    printLine.printf(leftAlignFormat2, item.getName(), shoppingList.get(item), "£" + item.getSell_price());
                 }
 
                 printLine.println("+--------------------------------+----------+----------+");
                 String totalPriceFormat2 = "| %-41s | %-8s | %n";
-                printLine.printf(totalPriceFormat2, "Total Price", totalPrice);
-                printLine.printf(totalPriceFormat2, "Money Given", moneyGiven);
-                printLine.printf(totalPriceFormat2, "Change Due", changeDue);
+                printLine.printf(totalPriceFormat2, "Total Price", "£" + totalPrice);
+                printLine.printf(totalPriceFormat2, "Money Given", "£" + moneyGiven);
+                printLine.printf(totalPriceFormat2, "Change Due", "£" + changeDue);
                 printLine.println("+--------------------------------+----------+----------+");
                 printLine.close();
+
+            // Catches error.
             } catch (IOException e) {
-                System.out.println("Sorry, currently external receipts are unavailable due to lack of file access");
+                System.out.println("Sorry, currently external receipts are unavailable due to lack of file access.");
             }
         }
     }

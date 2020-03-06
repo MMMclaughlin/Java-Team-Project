@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/epos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/epos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Menu.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +198,7 @@
       <workItem from="1583342551146" duration="649000" />
       <workItem from="1583414795419" duration="5804000" />
       <workItem from="1583424625193" duration="7248000" />
-      <workItem from="1583501814346" duration="7281000" />
+      <workItem from="1583501814346" duration="7960000" />
     </task>
     <task id="LOCAL-00001" summary="Set up most classes, created a sale loop and recipt with a hashmap. This does not work with db rn.&#10;db connection,query,insert and data all need creating in transactions?">
       <created>1582768423687</created>
@@ -265,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583507116091</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Comments added to Sale and epos class.">
+      <created>1583509171795</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583509171795</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +324,8 @@
     <MESSAGE value="epos interactDB cases updated to handle more errors." />
     <MESSAGE value="Item class updated with @ positions. Cases 4 and 5 mostly finished in epos class. Some error catching and testing to do." />
     <MESSAGE value="Receipt method updated to output ASCII table to command line and file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Receipt method updated to output ASCII table to command line and file." />
+    <MESSAGE value="Comments added to Sale and epos class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments added to Sale and epos class." />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="800" height="679" key="#Project_Structure" />

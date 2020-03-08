@@ -93,6 +93,7 @@ public class epos {
         Query query = session.createQuery("FROM Item order by id ");
         List results = query.getResultList();
         session.getTransaction().commit();
+        session.close();
 
         // Formats head of table.
         System.out.format("+-----+--------------------------------+-----------------+------------+------------+" +

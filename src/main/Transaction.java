@@ -59,12 +59,17 @@ public class Transaction implements CRUD{
     @Override
     public void insertItem(Item item) {
 
-        Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
-        session.beginTransaction(); // Begin the transaction
-        session.save(item);
-        session.getTransaction().commit(); // Committing the transaction
-        session.close();
-
+        try {
+            Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
+            session.beginTransaction(); // Begin the transaction
+            session.save(item);
+            session.getTransaction().commit(); // Committing the transaction
+            session.close();
+        }
+        catch(HibernateException e)
+        {
+            e.printStackTrace();
+        }
     }
 }
 

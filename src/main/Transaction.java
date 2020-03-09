@@ -3,6 +3,7 @@ package main;
 import org.hibernate.*;
 public class Transaction implements CRUD{
     //establish database connection here
+    Session session = HibernateUtil.getSessionFactory().openSession(); // Creates a Hibernate session
 
     public static void main(String[] args){
 
@@ -11,7 +12,6 @@ public class Transaction implements CRUD{
     @Override
     public Item findItem(int id) {
         try {
-            Session session = HibernateUtil.getSessionFactory().openSession();//creates a session
             session.beginTransaction();// begin transaction
             Item item = session.get(Item.class, id);//looks up item
             session.close();//closes current session
@@ -28,7 +28,6 @@ public class Transaction implements CRUD{
     public void updateStock(int id, int newStock) {
         try
         {
-            Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
             session.beginTransaction(); // Begin the transaction
             Item item = session.get(Item.class, id); // Gets the item from the database
             item.setStock(newStock); // Sets the item stock level to the new stock
@@ -48,7 +47,7 @@ public class Transaction implements CRUD{
 
         try
         {
-            Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
+            //Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
             session.beginTransaction(); // Begin the transaction
             Item item = session.get(Item.class, id); // Gets the item from the database
             session.delete(item); // Deletes the specific item from the database
@@ -66,7 +65,6 @@ public class Transaction implements CRUD{
     public void insertItem(Item item) {
 
         try {
-            Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
             session.beginTransaction(); // Begin the transaction
             session.save(item);
             session.getTransaction().commit(); // Committing the transaction

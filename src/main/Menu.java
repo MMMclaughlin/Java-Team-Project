@@ -42,7 +42,7 @@ public class Menu {
 
     }
 
-    public static String itemNameEnter(){
+    public static String stringInput(){
         // this takes and returns a string
         Scanner input = new Scanner(System.in);
         String itemName = input.nextLine();

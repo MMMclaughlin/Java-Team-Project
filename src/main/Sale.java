@@ -7,7 +7,8 @@ import java.io.PrintWriter;
 import java.io.IOException;
 
 public class Sale {
-    static HashMap<Item, Integer> shoppingList = new HashMap();
+    static HashMap<Integer, Item> shoppingList = new HashMap<Integer, Item>();
+    static HashMap<Integer, Integer> quantityList= new HashMap<>();
     double totalPrice;
     double moneyGiven;
     double changeDue;
@@ -18,7 +19,7 @@ public class Sale {
 
     }
 
-    public void sale() {
+    public void saleStart() {
         while (true) {
             System.out.println("Please enter a number to make a choice \n" +
                     "1) Make a purchase \n" +
@@ -26,8 +27,8 @@ public class Sale {
             if (Menu.intInput() == 1) {
                 System.out.println("Enter the id of the item you want to purchase: ");//adding to "basket"
                 int id = Menu.intInput();//takes input of next id
-                addToSale(id);//adding new id to sale
-            } else {//sale finished creating receipt
+                addToSale(id);//adding new id to saleStart
+            } else {//saleStart finished creating receipt
                 System.out.println("Generating receipt");
                 Receipt(shoppingList);//pass shopping list into receipt
                 System.out.println("Sale complete");
@@ -45,11 +46,12 @@ public class Sale {
         }
         //if item does exist
         if (item.getStock() != 0) {//checks item stock is greater than 0
-            if (shoppingList.containsKey(item)) {// if item is already in the hashmap, add one to quantity
-                shoppingList.put(item, shoppingList.get(item) + 1);
+            if (shoppingList.containsKey(id)) {// if item is already in the hashmap, add one to quantity
+                quantityList.put(id, quantityList.get(id) + 1);
 
             } else {//if it is a new item set quantity to one
-                shoppingList.put(item, 1);
+                shoppingList.put(id, item);
+                quantityList.put(id, 1);
             }
             tx.updateStock(id, item.getStock() - 1);//update stock in db
         } else {
@@ -57,14 +59,14 @@ public class Sale {
         }
     }
 
-    public void Receipt(HashMap<Item, Integer> shoppingList) {
+    public void Receipt(HashMap<Integer, Item> shoppingList) {
         // Asks user if they want to write the receipt to a file.
         System.out.println("Please enter \n 1: to print receipt to command line and save it to a separate file \n " +
                 "2: print the receipt to command line and not to a separate file");
         int receiptChoice = Menu.intInput();
 
         // Iterates through shopping list to calculate total price.
-        for (Item item : shoppingList.keySet()) {
+        for (Item item : shoppingList.values()) {
             totalPrice = totalPrice + item.getSell_price();
         }
         System.out.println("Your total is: £" + totalPrice);
@@ -91,8 +93,8 @@ public class Sale {
         String leftAlignFormat = "| %-30s | %-8s | %-8s | %n";
 
         // Iterates through items in shopping list and adds them to receipt body.
-        for (Item item : shoppingList.keySet()) {
-            System.out.format(leftAlignFormat, item.getName(), shoppingList.get(item), "£" + item.getSell_price());
+        for (Integer id: shoppingList.keySet()) {
+            System.out.format(leftAlignFormat, shoppingList.get(id).getName(), quantityList.get(id), "£" + shoppingList.get(id).getSell_price());
         }
 
         // Foot of receipt with total price, money given and change due.
@@ -115,8 +117,8 @@ public class Sale {
 
                 String leftAlignFormat2 = "| %-30s | %-8s | %-8s | %n";
 
-                for (Item item : shoppingList.keySet()) {
-                    printLine.printf(leftAlignFormat2, item.getName(), shoppingList.get(item), "£" + item.getSell_price());
+                for (Integer id: shoppingList.keySet()) {
+                    printLine.printf(leftAlignFormat, shoppingList.get(id).getName(), quantityList.get(id), "£" + shoppingList.get(id).getSell_price());
                 }
 
                 printLine.println("+--------------------------------+----------+----------+");

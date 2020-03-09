@@ -79,9 +79,9 @@ public class epos {
     }
 
     public void newSale() {
-        // Creates new sale object and calls constructor.
+        // Creates new saleStart object and calls constructor.
         Sale sale = new Sale();
-        sale.sale();
+        sale.saleStart();
     }
 
     public void checkDB() {

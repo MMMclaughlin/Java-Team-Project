@@ -9,6 +9,12 @@ public class Transaction implements CRUD{
 
         }
 
+    /** Finds and returns an item from the Item table in the database, which
+     * corresponds to the inputted ID.
+     * 
+      * @param id - an integer value, used as the item's ID in the Item table
+     * @return the corresponding item from the database
+     */
     @Override
     public Item findItem(int id) {
         try {
@@ -31,6 +37,14 @@ public class Transaction implements CRUD{
         return null;
     }
 
+    /** Updates the stock level of a given item.
+     * This uses a Hibernate session to get the item based on its ID,
+     * and then updates its stock in the database, using the user-defined
+     * integer value.
+     *
+     * @param id - the ID of the desired item in the Item table
+     * @param newStock the new stock level of the item
+     */
     @Override
     public void updateStock(int id, int newStock) {
         try
@@ -56,11 +70,15 @@ public class Transaction implements CRUD{
 
     }
 
+    /**
+     * Deletes an item from the database using its ID.
+     *
+     * @param id the item's ID in the Item table in the database
+     */
     @Override
     public void deleteItem(int id) {
         try
         {
-            //Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
             session.beginTransaction(); // Begin the transaction
             Item item = session.get(Item.class, id); // Gets the item from the database
             session.delete(item); // Deletes the specific item from the database
@@ -80,9 +98,13 @@ public class Transaction implements CRUD{
         }
     }
 
+    /**
+     * Adds a new item to the database table.
+     *
+     * @param item the item to be added to the database
+     */
     @Override
     public void insertItem(Item item) {
-
         try {
             session.beginTransaction(); // Begin the transaction
             session.save(item);

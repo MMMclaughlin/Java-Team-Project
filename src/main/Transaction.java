@@ -11,7 +11,7 @@ public class Transaction implements CRUD{
 
     /** Finds and returns an item from the Item table in the database, which
      * corresponds to the inputted ID.
-     * 
+     *
       * @param id - an integer value, used as the item's ID in the Item table
      * @return the corresponding item from the database
      */

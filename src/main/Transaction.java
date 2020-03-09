@@ -19,7 +19,13 @@ public class Transaction implements CRUD{
         }
         catch (HibernateException e)
         {
-            e.printStackTrace();
+            if (session!=null) {
+                session.getTransaction().rollback();
+                e.printStackTrace();
+            }
+        }
+        finally {
+            session.close();
         }
         return null;
     }
@@ -35,16 +41,21 @@ public class Transaction implements CRUD{
             session.getTransaction().commit(); // Commit transaction
             session.close();
         }
-        catch(HibernateException e)
+        catch (HibernateException e)
         {
-            e.printStackTrace();
+            if (session!=null) {
+                session.getTransaction().rollback();
+                e.printStackTrace();
+            }
+        }
+        finally {
+            session.close();
         }
 
     }
 
     @Override
     public void deleteItem(int id) {
-
         try
         {
             //Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
@@ -54,11 +65,16 @@ public class Transaction implements CRUD{
             session.getTransaction().commit(); // Committing the transaction
             session.close();
         }
-        catch(HibernateException e)
+        catch (HibernateException e)
         {
-            e.printStackTrace();
+            if (session!=null) {
+                session.getTransaction().rollback();
+                e.printStackTrace();
+            }
         }
-
+        finally {
+            session.close();
+        }
     }
 
     @Override
@@ -70,9 +86,15 @@ public class Transaction implements CRUD{
             session.getTransaction().commit(); // Committing the transaction
             session.close();
         }
-        catch(HibernateException e)
+        catch (HibernateException e)
         {
-            e.printStackTrace();
+            if (session!=null) {
+                session.getTransaction().rollback();
+                e.printStackTrace();
+            }
+        }
+        finally {
+            session.close();
         }
     }
 }

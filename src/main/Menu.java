@@ -55,7 +55,6 @@ public class Menu {
     public static String stringInput(){
         // this takes and returns a string
         Scanner input = new Scanner(System.in);
-        String itemName = input.nextLine();
-        return itemName;
+        return input.nextLine();
     }
 }

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce760c21-0c2c-4eea-9920-322c03fa8528" name="Default Changelist" comment="Merged sale check and sale exteernal file">
+    <list default="true" id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,62 +43,9 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/epos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Sale.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>transaction</find>
-      <find>system</find>
-      <find>view db</find>
-      <find>sale complete</find>
-      <find>sale</find>
-      <find>sale com</find>
-      <find>creat</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/Sale.java" />
-        <option value="$PROJECT_DIR$/src/main/epos.java" />
-      </list>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -108,92 +54,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1273" />
-    <option name="width" value="1294" />
-    <option name="height" value="1407" />
-  </component>
   <component name="ProjectId" id="1YIdL0r7Nvhzs6Wqirm7qdrZ7zj" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Grouproject(3)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Grouproject(3)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Grouproject(3)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Grouproject(3)" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Grouproject(3)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Grouproject(3)" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="assessment-3-team-project---small-business-case-study" type="58d84e3e:PackageViewProjectNode" />
-              <item name="assessment-3" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="assessment-3-team-project---small-business-case-study" type="58d84e3e:PackageViewProjectNode" />
-              <item name="assessment-3" type="616d4139:PackageViewModuleNode" />
-              <item name="main" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Course" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -210,16 +71,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dataMar-6-2020 (2).csv" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.side.proportion" value="0.3494253" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -246,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.epos">
     <configuration name="Sale" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Sale" />
       <module name="Hibernate" />
@@ -288,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
         <item itemvalue="Application.epos" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.Sale" />
       </list>
     </recent_temporary>
@@ -319,7 +180,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ce760c21-0c2c-4eea-9920-322c03fa8528" name="Default Changelist" comment="Merged sale check and sale exteernal file" />
+      <changelist id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="" />
       <created>1582633982438</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -334,8 +195,10 @@
       <workItem from="1583171146400" duration="298000" />
       <workItem from="1583240688823" duration="1333000" />
       <workItem from="1583244951291" duration="262000" />
-      <workItem from="1583440474799" duration="282000" />
-      <workItem from="1583760960904" duration="272000" />
+      <workItem from="1583342551146" duration="649000" />
+      <workItem from="1583414795419" duration="5804000" />
+      <workItem from="1583424625193" duration="7248000" />
+      <workItem from="1583501814346" duration="9001000" />
     </task>
     <task id="LOCAL-00001" summary="Set up most classes, created a sale loop and recipt with a hashmap. This does not work with db rn.&#10;db connection,query,insert and data all need creating in transactions?">
       <created>1582768423687</created>
@@ -351,122 +214,71 @@
       <option name="project" value="LOCAL" />
       <updated>1583161800649</updated>
     </task>
-    <task id="LOCAL-00003" summary="Merge branch 'master' of https://nucode.ncl.ac.uk/scomp/stage1/csc1035/teams/Team-40/assessment-3-team-project---small-business-case-study&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <created>1583415587026</created>
+    <task id="LOCAL-00003" summary="checkDB complete">
+      <created>1583322931459</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1583415587026</updated>
+      <updated>1583322931459</updated>
     </task>
-    <task id="LOCAL-00004" summary="Merge branch 'master' of https://nucode.ncl.ac.uk/scomp/stage1/csc1035/teams/Team-40/assessment-3-team-project---small-business-case-study&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/Sale.java&#10;#&#9;src/main/epos.java">
-      <created>1583420210534</created>
+    <task id="LOCAL-00004" summary="epos updates">
+      <created>1583323824331</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1583420210534</updated>
+      <updated>1583323824331</updated>
     </task>
-    <task id="LOCAL-00005" summary="Updated Sale recipt">
-      <created>1583420340652</created>
+    <task id="LOCAL-00005" summary="epos interactDB cases 1 and 2 complete.">
+      <created>1583417587776</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1583420340652</updated>
+      <updated>1583417587776</updated>
     </task>
-    <task id="LOCAL-00006" summary="Merged sale check and sale exteernal file">
-      <created>1583420482411</created>
+    <task id="LOCAL-00006" summary="epos interactDB case 3 complete, 4 nearly done.&#10;Showing DB connection issue.">
+      <created>1583420599373</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1583420482411</updated>
+      <updated>1583420599373</updated>
     </task>
-    <task id="LOCAL-00007" summary="Merged sale check and sale exteernal file">
-      <created>1583420666801</created>
+    <task id="LOCAL-00007" summary="epos interactDB cases updated to handle more errors.">
+      <created>1583429919768</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1583420666801</updated>
+      <updated>1583429919768</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Item class updated with @ positions. Cases 4 and 5 mostly finished in epos class. Some error catching and testing to do.">
+      <created>1583434229593</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583434229593</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Receipt method updated to output ASCII table to command line and file.">
+      <created>1583507116091</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583507116091</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Comments added to Sale and epos class.">
+      <created>1583509171795</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583509171795</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Error catching added to input functions in Menu class.">
+      <created>1583509864123</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1583509864123</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6307000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="1" />
-      <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.25397456" />
-      <window_info id="Repositories" order="8" weight="0.3298887" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4936407" visible="true" weight="0.32969603" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32969603" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5063593" side_tool="true" weight="0.32969603" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4936407" weight="0.32969603" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32969603" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3298887" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Repositories" order="0" weight="0.3298887" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Persistence" order="3" side_tool="true" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Image Layers" order="7" />
-      <window_info content_ui="combo" id="Project" order="8" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4936407" visible="true" weight="0.32969603" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32969603" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5063593" side_tool="true" weight="0.32969603" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4936407" weight="0.32969603" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="15" visible="true" weight="0.32969603" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3298887" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -487,20 +299,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -525,11 +324,16 @@
     <MESSAGE value="Set up most classes, created a sale loop and recipt with a hashmap. This does not work with db rn.&#10;db connection,query,insert and data all need creating in transactions?" />
     <MESSAGE value="Updateed transaction class" />
     <MESSAGE value="Spelling updates" />
-    <MESSAGE value="Merge branch 'master' of https://nucode.ncl.ac.uk/scomp/stage1/csc1035/teams/Team-40/assessment-3-team-project---small-business-case-study&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <MESSAGE value="Merge branch 'master' of https://nucode.ncl.ac.uk/scomp/stage1/csc1035/teams/Team-40/assessment-3-team-project---small-business-case-study&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/Sale.java&#10;#&#9;src/main/epos.java" />
-    <MESSAGE value="Updated Sale recipt" />
-    <MESSAGE value="Merged sale check and sale exteernal file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged sale check and sale exteernal file" />
+    <MESSAGE value="checkDB complete" />
+    <MESSAGE value="epos updates" />
+    <MESSAGE value="epos interactDB cases 1 and 2 complete." />
+    <MESSAGE value="epos interactDB case 3 complete, 4 nearly done.&#10;Showing DB connection issue." />
+    <MESSAGE value="epos interactDB cases updated to handle more errors." />
+    <MESSAGE value="Item class updated with @ positions. Cases 4 and 5 mostly finished in epos class. Some error catching and testing to do." />
+    <MESSAGE value="Receipt method updated to output ASCII table to command line and file." />
+    <MESSAGE value="Comments added to Sale and epos class." />
+    <MESSAGE value="Error catching added to input functions in Menu class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Error catching added to input functions in Menu class." />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="800" height="679" key="#Project_Structure" />
@@ -572,154 +376,5 @@
     <state x="6" y="27" width="1345" height="741" key="new project wizard/0.27.1366.741@0.27.1366.741" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/CRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/HibernateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recipt.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/epos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>assessment-3</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Hibernate 5.3.10-5.3.10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

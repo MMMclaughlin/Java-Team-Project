@@ -11,11 +11,18 @@ public class Transaction implements CRUD{
 
     @Override
     public Item findItem(int id) {
-        Session session = HibernateUtil.getSessionFactory().openSession();//creates a session
-        session.beginTransaction();// begin transaction
-        Item item = (Item)session.get(Item.class,id);//looks up item
-        session.close();//closes current session
-        return item;//return found item or null if item wasn't found
+        try {
+            Session session = HibernateUtil.getSessionFactory().openSession();//creates a session
+            session.beginTransaction();// begin transaction
+            Item item = (Item) session.get(Item.class, id);//looks up item
+            session.close();//closes current session
+            return item;//return found item or null if item wasn't found
+        }
+        catch (HibernateException e)
+        {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override
@@ -59,12 +66,17 @@ public class Transaction implements CRUD{
     @Override
     public void insertItem(Item item) {
 
-        Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
-        session.beginTransaction(); // Begin the transaction
-        session.save(item);
-        session.getTransaction().commit(); // Committing the transaction
-        session.close();
-
+        try {
+            Session session = HibernateUtil.getSessionFactory().openSession(); // Create a session
+            session.beginTransaction(); // Begin the transaction
+            session.save(item);
+            session.getTransaction().commit(); // Committing the transaction
+            session.close();
+        }
+        catch(HibernateException e)
+        {
+            e.printStackTrace();
+        }
     }
 }
 

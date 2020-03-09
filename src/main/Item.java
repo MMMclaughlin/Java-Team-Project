@@ -1,25 +1,17 @@
 package main;
 
 import javax.persistence.*;
+
 @Entity (name = "Item")// this lets hibernate know that this is an entity in the database
 public class Item {
     //idpull ,name,category,perishable,cost,stock,sell_price
-    @Id// this is the id value which will auto generate when we create a new Item
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(updatable = false, nullable = false)//sets parameters for id
     private int id;
-    @Column
-    String name;
-    @Column
-    String category;
-    @Column
-    int perishable;
-    @Column
-    double cost;
-    @Column
-    int stock;
-    @Column
-    double sell_price;
+    private String name;
+    private String category;
+    private int perishable;
+    private double cost;
+    private int stock;
+    private double sell_price;
 
     public Item(String name, String category, int perishable, double cost, int stock, double sell_price) {
         //this.id = id;
@@ -31,14 +23,19 @@ public class Item {
         this.sell_price = sell_price;
     }
 
-    public static void main(String[] args){
-
-    }
-
     public Item() {
 
     }
 
+    @Override
+    public String toString() {
+        return "ID: " + id + "\nName: " + name + "\nCategory: " + category + "\nPerishable: " + perishable +
+                "\nCost: " + cost + "\nstock: " + stock + "\nPrice: " + sell_price;
+    }
+
+    @Id// this is the id value which will auto generate when we create a new Item
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(updatable = false, nullable = false)//sets parameters for id
     public int getId() {
         return id;
     }
@@ -47,6 +44,8 @@ public class Item {
         this.id = id;
     }
 
+    @Basic
+    @Column (name = "name")
     public String getName() {
         return name;
     }
@@ -55,6 +54,8 @@ public class Item {
         this.name = name;
     }
 
+    @Basic
+    @Column (name = "category")
     public String getCategory() {
         return category;
     }
@@ -63,6 +64,8 @@ public class Item {
         this.category = category;
     }
 
+    @Basic
+    @Column (name = "perishable")
     public int getPerishable() {
         return perishable;
     }
@@ -71,6 +74,8 @@ public class Item {
         this.perishable = perishable;
     }
 
+    @Basic
+    @Column (name = "cost")
     public double getCost() {
         return cost;
     }
@@ -79,6 +84,8 @@ public class Item {
         this.cost = cost;
     }
 
+    @Basic
+    @Column (name = "stock")
     public int getStock() {
         return stock;
     }
@@ -87,6 +94,8 @@ public class Item {
         this.stock = stock;
     }
 
+    @Basic
+    @Column (name = "sell_price")
     public double getSell_price() {
         return sell_price;
     }

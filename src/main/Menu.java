@@ -14,7 +14,13 @@ public class Menu {
         enter 2 to update an item etc
          */
         Scanner input = new Scanner(System.in);
-        int menuChoice = input.nextInt();
+        String enteredValue = input.nextLine();
+        int menuChoice = 0;
+        try{
+            menuChoice = Integer.parseInt(enteredValue);
+        } catch (NumberFormatException e) {
+            System.out.println("### Only enter an integer. Default to 0. ###");
+        }
         return menuChoice;
     }
 
@@ -22,10 +28,18 @@ public class Menu {
      *
      * @return the user's input as a double
      */
-    public static double doubleInput()
-    {
-        Scanner input = new Scanner(System.in);
-        return input.nextDouble();
+    public static double doubleInput() {
+        Scanner doubleInput = new Scanner(System.in);
+        String enteredDouble = doubleInput.nextLine();
+
+        double doubleChoice = 0;
+        try{
+            doubleChoice = Double.parseDouble(enteredDouble);
+        } catch (NumberFormatException e) {
+            System.out.println("### Only enter a double. Default to 0. ###");
+        }
+        return doubleChoice;
+
     }
 
     public static String itemNameEnter(){

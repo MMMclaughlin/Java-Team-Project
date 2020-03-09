@@ -1,7 +1,6 @@
 package main;
 
 import org.hibernate.*;
-import javax.persistence.Entity;
 public class Transaction implements CRUD{
     //establish database connection here
 
@@ -14,7 +13,7 @@ public class Transaction implements CRUD{
         try {
             Session session = HibernateUtil.getSessionFactory().openSession();//creates a session
             session.beginTransaction();// begin transaction
-            Item item = (Item) session.get(Item.class, id);//looks up item
+            Item item = session.get(Item.class, id);//looks up item
             session.close();//closes current session
             return item;//return found item or null if item wasn't found
         }

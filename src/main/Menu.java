@@ -6,6 +6,12 @@ public class Menu {
     public static void main(String[] args){
         
     }
+
+    /**Takes user input from the console and parses it as an integer.
+     * This allows users to make choices in the EPOS menus.
+     *
+     * @return the user's input as an integer
+     */
     public static int intInput(){
 
         /*
@@ -24,7 +30,7 @@ public class Menu {
         return menuChoice;
     }
 
-    /** Takes user input from the console.
+    /** Takes user input from the console, and parses it as a double.
      *
      * @return the user's input as a double
      */
@@ -42,6 +48,10 @@ public class Menu {
 
     }
 
+    /** Takes user input from the console and returns it as a string.
+     *
+     * @return string value of user input
+     */
     public static String stringInput(){
         // this takes and returns a string
         Scanner input = new Scanner(System.in);

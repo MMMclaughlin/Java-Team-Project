@@ -14,7 +14,6 @@ public class Transaction implements CRUD{
         try {
             session.beginTransaction();// begin transaction
             Item item = session.get(Item.class, id);//looks up item
-            session.close();//closes current session
             return item;//return found item or null if item wasn't found
         }
         catch (HibernateException e)
@@ -25,7 +24,9 @@ public class Transaction implements CRUD{
             }
         }
         finally {
-            session.close();
+            if (session != null) {
+                session.close();
+            }
         }
         return null;
     }
@@ -39,7 +40,6 @@ public class Transaction implements CRUD{
             item.setStock(newStock); // Sets the item stock level to the new stock
             session.update(item); // Updates the item's stock in the database
             session.getTransaction().commit(); // Commit transaction
-            session.close();
         }
         catch (HibernateException e)
         {
@@ -49,7 +49,9 @@ public class Transaction implements CRUD{
             }
         }
         finally {
-            session.close();
+            if (session != null) {
+                session.close();
+            }
         }
 
     }
@@ -63,7 +65,6 @@ public class Transaction implements CRUD{
             Item item = session.get(Item.class, id); // Gets the item from the database
             session.delete(item); // Deletes the specific item from the database
             session.getTransaction().commit(); // Committing the transaction
-            session.close();
         }
         catch (HibernateException e)
         {
@@ -73,7 +74,9 @@ public class Transaction implements CRUD{
             }
         }
         finally {
-            session.close();
+            if (session != null) {
+                session.close();
+            }
         }
     }
 
@@ -84,7 +87,6 @@ public class Transaction implements CRUD{
             session.beginTransaction(); // Begin the transaction
             session.save(item);
             session.getTransaction().commit(); // Committing the transaction
-            session.close();
         }
         catch (HibernateException e)
         {
@@ -94,7 +96,9 @@ public class Transaction implements CRUD{
             }
         }
         finally {
-            session.close();
+            if (session != null) {
+                session.close();
+            }
         }
     }
 }

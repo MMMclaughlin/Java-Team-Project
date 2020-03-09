@@ -30,7 +30,7 @@ public class Sale {
                 addToSale(id);//adding new id to saleStart
             } else {//saleStart finished creating receipt
                 System.out.println("Generating receipt");
-                Receipt(shoppingList);//pass shopping list into receipt
+                Receipt(shoppingList,quantityList);//pass shopping list into receipt
                 System.out.println("Sale complete");
                 break;
             }
@@ -59,7 +59,7 @@ public class Sale {
         }
     }
 
-    public void Receipt(HashMap<Integer, Item> shoppingList) {
+    public void Receipt(HashMap<Integer, Item> shoppingList, HashMap<Integer, Integer> quantityList) {
         // Asks user if they want to write the receipt to a file.
         System.out.println("Please enter \n 1: to print receipt to command line and save it to a separate file \n " +
                 "2: print the receipt to command line and not to a separate file");
@@ -67,7 +67,7 @@ public class Sale {
 
         // Iterates through shopping list to calculate total price.
         for (Item item : shoppingList.values()) {
-            totalPrice = totalPrice + item.getSell_price();
+            totalPrice = totalPrice + (item.getSell_price() * quantityList.get(item.getId()));
         }
         System.out.println("Your total is: £" + totalPrice);
 

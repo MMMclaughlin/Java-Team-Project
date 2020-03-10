@@ -2,7 +2,6 @@ package main;
 
 import org.hibernate.*;
 public class Transaction implements CRUD{
-    //establish database connection here
 
     public static void main(String[] args){
 
@@ -20,15 +19,12 @@ public class Transaction implements CRUD{
         Session sessionLocal = HibernateUtil.getSessionFactory().openSession();
         try {
             sessionLocal.beginTransaction();// begin transaction
-            Item item = sessionLocal.get(Item.class, id);//looks up item
-            return item;//return found item or null if item wasn't found
+            return sessionLocal.get(Item.class, id);//return found item or null if item wasn't found
         }
         catch (HibernateException e)
         {
-            if (sessionLocal!=null) {
-                sessionLocal.getTransaction().rollback();
-                e.printStackTrace();
-            }
+            sessionLocal.getTransaction().rollback();
+            e.printStackTrace();
         }
         finally {
             if (sessionLocal != null) {
@@ -59,10 +55,8 @@ public class Transaction implements CRUD{
         }
         catch (HibernateException e)
         {
-            if (sessionLocal!=null) {
-                sessionLocal.getTransaction().rollback();
-                e.printStackTrace();
-            }
+            sessionLocal.getTransaction().rollback();
+            e.printStackTrace();
         }
         finally {
             if (sessionLocal != null) {
@@ -89,10 +83,8 @@ public class Transaction implements CRUD{
         }
         catch (HibernateException e)
         {
-            if (sessionLocal!=null) {
-                sessionLocal.getTransaction().rollback();
-                e.printStackTrace();
-            }
+            sessionLocal.getTransaction().rollback();
+            e.printStackTrace();
         }
         finally {
             if (sessionLocal != null) {
@@ -116,10 +108,8 @@ public class Transaction implements CRUD{
         }
         catch (HibernateException e)
         {
-            if (sessionLocal!=null) {
-                sessionLocal.getTransaction().rollback();
-                e.printStackTrace();
-            }
+            sessionLocal.getTransaction().rollback();
+            e.printStackTrace();
         }
         finally {
             if (sessionLocal != null) {

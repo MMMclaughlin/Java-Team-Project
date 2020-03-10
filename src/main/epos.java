@@ -31,7 +31,17 @@ public class epos {
         }
     }
 
-    // Gives user options then calls appropriate methods.
+    /**
+     * This method gives the user a choice of what they would like
+     * to do with the program.
+     *
+     * Here, they can purchase items, view the overall database,
+     * or insert, delete or update items.
+     *
+     * Once users have made their choice, this calls the appropriate
+     * methods for interacting with the database.
+     *
+     */
     public void choice() {
         // Display choices to user.
         System.out.println("Choose one of the following options: \n" +
@@ -78,12 +88,21 @@ public class epos {
         }
     }
 
+    /**
+     * Creates a Sale object and calls its saleStart() method,
+     * beginning the overall sale process.
+     */
     public void newSale() {
         // Creates new saleStart object and calls constructor.
         Sale sale = new Sale();
         sale.saleStart();
     }
 
+    /**
+     * Gets all items from the database and displays them
+     * in an ASCII table format.
+     *
+     */
     public void checkDB() {
         // Read all records from DB
         // Formats data into ASCII table
@@ -119,6 +138,20 @@ public class epos {
 
     }
 
+    /**
+     * The main method for interacting with the database
+     * and performing CRUD operations on the data.
+     *
+     * The choice menu allows users to choose what they
+     * would like to do with the database, including
+     * finding an item, updating stock levels, deleting or
+     * adding new items to the database.
+     *
+     * After they have made their choice, this will call
+     * the correct methods to allow the user to interact
+     * with the database in the desired way.
+     *
+     */
     public void interactDB() {
         // Displays DB to user.
         System.out.println("Database in Current form:");
@@ -151,7 +184,7 @@ public class epos {
             System.out.println("### Choice must be between 1 and 5. Default to locate item by ID. ###");
         }
 
-        // Performs appropriate acction based on user's choice.
+        // Performs appropriate action based on user's choice.
         Transaction thisTransaction = new Transaction();
         switch (choice) {
             // Locate an item.

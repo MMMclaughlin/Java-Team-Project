@@ -19,8 +19,7 @@ public class Transaction implements CRUD{
         Session sessionLocal = HibernateUtil.getSessionFactory().openSession();
         try {
             sessionLocal.beginTransaction();// begin transaction
-            Item item = sessionLocal.get(Item.class, id);//looks up item
-            return item;//return found item or null if item wasn't found
+            return sessionLocal.get(Item.class, id);//return found item or null if item wasn't found
         }
         catch (HibernateException e)
         {

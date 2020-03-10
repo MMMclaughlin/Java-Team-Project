@@ -12,7 +12,10 @@ public class Jtests {
     // this is a file for running a specific data set or queries and can be edited freely.
     public static void main(String[] args){
         Jtests test = new Jtests();
-        test.queryTest();
+        test.intInputTest();
+        test.doubleInputTest();
+        test.stringInputTest();
+
     }
     //Input Tests
     @Test
@@ -25,7 +28,7 @@ public class Jtests {
     @Test
     @DisplayName("Test -> doubleInput")
     public void doubleInputTest(){
-        double input = Menu.intInput();//give the expected value as the input
+        double input = Menu.doubleInput();//give the expected value as the input
         double expected = 5.50;
         assertEquals(expected,input);
     }
@@ -37,17 +40,9 @@ public class Jtests {
         assertEquals(expected,input);
     }
     @Test
-    @DisplayName("Test -> reciptTest")
-    public void receiptTest(){
-        Sale sale = new Sale();
-        sale.addToSale(1);;
-    }
-    @Test
     @DisplayName("Test -> queryTest")
     public void queryTest(){
-        Session session = HibernateUtil.getSessionFactory().openSession(); // Creates a Hibernate session
-        session.beginTransaction();// begin transaction
-        Item queryItem = session.createQuery("FROM Item", Item.class).setMaxResults(1).getResultList().get(0);
+        Item queryItem = Jtests.validItemGen();
         Item item = new Transaction().findItem(queryItem.getId());
         System.out.println(item);
         System.out.println(queryItem);
@@ -57,21 +52,22 @@ public class Jtests {
     }
     @Test
     @DisplayName("Test -> updateStockTest")
-    public void updateTests(){
-        Item tx = new Transaction().findItem(1);
+    public void updateTest(){
+        Item queryItem = Jtests.validItemGen();
+        Item tx = new Transaction().findItem(queryItem.getId());
         new Transaction().updateStock(tx.getId(),tx.getStock()+1);
-        Item tx2 = new Transaction().findItem(1);
+        Item tx2 = new Transaction().findItem(queryItem.getId());
         assertEquals(tx.getStock(),tx2.getStock()-1);
-
-
     }
     @Test
     @DisplayName("Test -> deleteTest")
     public void deleteTests(){
-        Item tx = new Transaction().findItem(1);
+        Item queryItem = Jtests.validItemGen();
+        Item tx = new Transaction().findItem(queryItem.getId());
         new Transaction().deleteItem(tx.getId());
-        Item tx2 = new Transaction().findItem(1);
+        Item tx2 = new Transaction().findItem(queryItem.getId());
         assertEquals(tx2,null);
+        new Transaction().insertItem(tx);
 
     }
     @Test
@@ -93,6 +89,15 @@ public class Jtests {
         new Transaction().insertItem(item);
         sale.addToSale(item.getId());// this shouldnt add as the item is not in the database yet
         assertEquals(Sale.shoppingList.size(),1);
+        new Transaction().deleteItem(item.getId());
 
+    }
+    public static Item validItemGen()
+
+    {
+        Session session = HibernateUtil.getSessionFactory().openSession(); // Creates a Hibernate session
+        session.beginTransaction();// begin transaction
+        Item queryItem = session.createQuery("FROM Item", Item.class).setMaxResults(1).getResultList().get(0);
+        return  queryItem;
     }
 }

@@ -3,7 +3,6 @@ package main;
 import org.hibernate.*;
 public class Transaction implements CRUD{
     //establish database connection here
-    Session session = HibernateUtil.getSessionFactory().openSession(); // Creates a Hibernate session
 
     public static void main(String[] args){
 
@@ -49,24 +48,25 @@ public class Transaction implements CRUD{
      */
     @Override
     public void updateStock(int id, int newStock) {
+        Session sessionLocal = HibernateUtil.getSessionFactory().openSession();
         try
         {
-            session.beginTransaction(); // Begin the transaction
-            Item item = session.get(Item.class, id); // Gets the item from the database
+            sessionLocal.beginTransaction(); // Begin the transaction
+            Item item = sessionLocal.get(Item.class, id); // Gets the item from the database
             item.setStock(newStock); // Sets the item stock level to the new stock
-            session.update(item); // Updates the item's stock in the database
-            session.getTransaction().commit(); // Commit transaction
+            sessionLocal.update(item); // Updates the item's stock in the database
+            sessionLocal.getTransaction().commit(); // Commit transaction
         }
         catch (HibernateException e)
         {
-            if (session!=null) {
-                session.getTransaction().rollback();
+            if (sessionLocal!=null) {
+                sessionLocal.getTransaction().rollback();
                 e.printStackTrace();
             }
         }
         finally {
-            if (session != null) {
-                session.close();
+            if (sessionLocal != null) {
+                sessionLocal.close();
             }
         }
 
@@ -79,23 +79,24 @@ public class Transaction implements CRUD{
      */
     @Override
     public void deleteItem(int id) {
+        Session sessionLocal = HibernateUtil.getSessionFactory().openSession();
         try
         {
-            session.beginTransaction(); // Begin the transaction
-            Item item = session.get(Item.class, id); // Gets the item from the database
-            session.delete(item); // Deletes the specific item from the database
-            session.getTransaction().commit(); // Committing the transaction
+            sessionLocal.beginTransaction(); // Begin the transaction
+            Item item = sessionLocal.get(Item.class, id); // Gets the item from the database
+            sessionLocal.delete(item); // Deletes the specific item from the database
+            sessionLocal.getTransaction().commit(); // Committing the transaction
         }
         catch (HibernateException e)
         {
-            if (session!=null) {
-                session.getTransaction().rollback();
+            if (sessionLocal!=null) {
+                sessionLocal.getTransaction().rollback();
                 e.printStackTrace();
             }
         }
         finally {
-            if (session != null) {
-                session.close();
+            if (sessionLocal != null) {
+                sessionLocal.close();
             }
         }
     }
@@ -107,21 +108,22 @@ public class Transaction implements CRUD{
      */
     @Override
     public void insertItem(Item item) {
+        Session sessionLocal = HibernateUtil.getSessionFactory().openSession();
         try {
-            session.beginTransaction(); // Begin the transaction
-            session.save(item);
-            session.getTransaction().commit(); // Committing the transaction
+            sessionLocal.beginTransaction(); // Begin the transaction
+            sessionLocal.save(item);
+            sessionLocal.getTransaction().commit(); // Committing the transaction
         }
         catch (HibernateException e)
         {
-            if (session!=null) {
-                session.getTransaction().rollback();
+            if (sessionLocal!=null) {
+                sessionLocal.getTransaction().rollback();
                 e.printStackTrace();
             }
         }
         finally {
-            if (session != null) {
-                session.close();
+            if (sessionLocal != null) {
+                sessionLocal.close();
             }
         }
     }

@@ -2,6 +2,12 @@ package main;
 
 import javax.persistence.*;
 
+/**
+ * Creates the Item table in the database, using Hibernate.
+ * This creates each column in the table, and automatically generates a
+ * unique ID for every item.
+ *
+ */
 @Entity (name = "Item")// this lets hibernate know that this is an entity in the database
 public class Item {
     //idpull ,name,category,perishable,cost,stock,sell_price

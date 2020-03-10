@@ -11,7 +11,6 @@ public class Sale {
     double totalPrice;
     double moneyGiven;
     double changeDue;
-    static int maxNameSize = 5;// this makes formatting the receipt a little easier.
     static Transaction tx = new Transaction();
 
     public static void main(String[] args) {

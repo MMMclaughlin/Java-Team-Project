@@ -2,7 +2,6 @@ package main;
 
 import org.hibernate.*;
 public class Transaction implements CRUD{
-    //establish database connection here
 
     public static void main(String[] args){
 
@@ -25,10 +24,8 @@ public class Transaction implements CRUD{
         }
         catch (HibernateException e)
         {
-            if (sessionLocal!=null) {
-                sessionLocal.getTransaction().rollback();
-                e.printStackTrace();
-            }
+            sessionLocal.getTransaction().rollback();
+            e.printStackTrace();
         }
         finally {
             if (sessionLocal != null) {
@@ -59,10 +56,8 @@ public class Transaction implements CRUD{
         }
         catch (HibernateException e)
         {
-            if (sessionLocal!=null) {
-                sessionLocal.getTransaction().rollback();
-                e.printStackTrace();
-            }
+            sessionLocal.getTransaction().rollback();
+            e.printStackTrace();
         }
         finally {
             if (sessionLocal != null) {
@@ -89,10 +84,8 @@ public class Transaction implements CRUD{
         }
         catch (HibernateException e)
         {
-            if (sessionLocal!=null) {
-                sessionLocal.getTransaction().rollback();
-                e.printStackTrace();
-            }
+            sessionLocal.getTransaction().rollback();
+            e.printStackTrace();
         }
         finally {
             if (sessionLocal != null) {
@@ -116,10 +109,8 @@ public class Transaction implements CRUD{
         }
         catch (HibernateException e)
         {
-            if (sessionLocal!=null) {
-                sessionLocal.getTransaction().rollback();
-                e.printStackTrace();
-            }
+            sessionLocal.getTransaction().rollback();
+            e.printStackTrace();
         }
         finally {
             if (sessionLocal != null) {

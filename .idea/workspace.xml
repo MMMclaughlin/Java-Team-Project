@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86eadd57-8cef-409e-9c97-dbc83350ebfa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Jtests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Jtests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Transaction.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,21 +25,44 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Teamproject(2)" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Teamproject(2)" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Teamproject(2)" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="csc1035_team40: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Teamproject(2)" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="csc1035_team40: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="Item: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.49733254">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/epos.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+                <state relative-caret-position="-2865">
+                  <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
                   <folding>
                     <element signature="e#0#21#0" expanded="true" />
                   </folding>
@@ -48,24 +73,21 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+                <state relative-caret-position="901">
+                  <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/recipt.txt">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/Jtests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+                <state relative-caret-position="628">
+                  <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
                   <folding>
-                    <element signature="imports" expanded="true" />
+                    <element signature="e#0#13#0" expanded="true" />
+                    <element signature="e#0#17#1" expanded="true" />
+                    <element signature="e#0#9#1" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -73,14 +95,9 @@
           </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resources/hibernate.cfg.xml">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/Transaction.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+                <state relative-caret-position="187">
+                  <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
                 </state>
               </provider>
             </entry>
@@ -88,24 +105,35 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
+                <state relative-caret-position="17">
                   <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fbe19a01-333b-40c8-92e7-999b31500319/console.sql">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/Sale.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="236">
-                  <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-                  <folding>
-                    <element signature="e#233#248#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="270">
+                  <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/Transaction.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="629">
+                  <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -113,8 +141,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="765">
-                  <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+                <state relative-caret-position="612">
+                  <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -122,8 +150,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/Item.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                <state relative-caret-position="642">
+                  <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -164,8 +192,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/epos.java" />
-        <option value="$PROJECT_DIR$/src/main/Jtests.java" />
         <option value="$PROJECT_DIR$/src/main/Sale.java" />
+        <option value="$PROJECT_DIR$/src/main/Jtests.java" />
+        <option value="$PROJECT_DIR$/src/main/Transaction.java" />
       </list>
     </option>
   </component>
@@ -198,41 +227,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,7 +276,41 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Grouproject(3)" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="assessment-3" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="H:\Grouproject(3)" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -336,9 +365,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.epos">
-    <configuration name="Jtests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Jtests.insertTest">
+    <configuration name="Jtests.addToSaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assessment-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
       <option name="MAIN_CLASS_NAME" value="main.Jtests" />
+      <option name="METHOD_NAME" value="addToSaleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Jtests.deleteTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assessment-3" />
       <extension name="coverage">
         <pattern>
@@ -346,25 +390,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.Jtests" />
+      <option name="METHOD_NAME" value="deleteTests" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sale" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Sale" />
-      <module name="Hibernate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="epos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.epos" />
+    <configuration name="Jtests.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assessment-3" />
       <extension name="coverage">
         <pattern>
@@ -372,15 +406,53 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.Jtests" />
+      <option name="METHOD_NAME" value="insertTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Jtests.queryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assessment-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.Jtests" />
+      <option name="METHOD_NAME" value="queryTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Jtests.updateTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assessment-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.Jtests" />
+      <option name="METHOD_NAME" value="updateTests" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.epos" />
-        <item itemvalue="Application.Jtests" />
-        <item itemvalue="Application.Sale" />
+        <item itemvalue="JUnit.Jtests.insertTest" />
+        <item itemvalue="JUnit.Jtests.addToSaleTest" />
+        <item itemvalue="JUnit.Jtests.deleteTests" />
+        <item itemvalue="JUnit.Jtests.updateTests" />
+        <item itemvalue="JUnit.Jtests.queryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -428,6 +500,8 @@
       <workItem from="1583414795419" duration="5804000" />
       <workItem from="1583424625193" duration="7248000" />
       <workItem from="1583501814346" duration="9001000" />
+      <workItem from="1583836729425" duration="1323000" />
+      <workItem from="1583845070796" duration="5416000" />
     </task>
     <task id="LOCAL-00001" summary="Set up most classes, created a sale loop and recipt with a hashmap. This does not work with db rn.&#10;db connection,query,insert and data all need creating in transactions?">
       <created>1582768423687</created>
@@ -520,11 +594,50 @@
       <option name="project" value="LOCAL" />
       <updated>1583765542671</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fixed total price to use multiply the price by the quantity">
+      <created>1583765922108</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583765922108</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Jtests_updateTests - 2020.03.10 at 14h 02m 19s.xml">
+      <configuration name="Jtests.updateTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Jtests_deleteTests - 2020.03.10 at 14h 04m 59s.xml">
+      <configuration name="Jtests.deleteTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Jtests_deleteTests - 2020.03.10 at 14h 05m 26s.xml">
+      <configuration name="Jtests.deleteTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Jtests_insertTest - 2020.03.10 at 14h 12m 18s.xml">
+      <configuration name="Jtests.insertTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Jtests_insertTest - 2020.03.10 at 14h 13m 21s.xml">
+      <configuration name="Jtests.insertTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Jtests_addToSaleTest - 2020.03.10 at 14h 18m 49s.xml">
+      <configuration name="Jtests.addToSaleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Jtests_addToSaleTest - 2020.03.10 at 14h 20m 37s.xml">
+      <configuration name="Jtests.addToSaleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Jtests_addToSaleTest - 2020.03.10 at 14h 21m 20s.xml">
+      <configuration name="Jtests.addToSaleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Jtests_insertTest - 2020.03.10 at 14h 23m 27s.xml">
+      <configuration name="Jtests.insertTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Jtests_addToSaleTest - 2020.03.10 at 14h 23m 46s.xml">
+      <configuration name="Jtests.addToSaleTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4430000" />
+    <option name="totallyTimeSpent" value="11522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -537,11 +650,11 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.25397456" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.2579491" />
       <window_info id="Repositories" order="8" weight="0.3298887" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936407" visible="true" weight="0.32969603" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4936407" visible="true" weight="0.32969603" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,7 +666,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5063593" side_tool="true" weight="0.32969603" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4936407" weight="0.32969603" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32969603" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -573,11 +686,11 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.25397456" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.2579491" />
       <window_info id="Repositories" order="8" weight="0.3298887" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936407" weight="0.32969603" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936407" visible="true" weight="0.32969603" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -589,7 +702,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5063593" side_tool="true" weight="0.32969603" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4936407" weight="0.32969603" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32969603" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -597,7 +710,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.3298887" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3298887" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.07154213" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout-to-restore>
@@ -663,7 +776,8 @@
     <MESSAGE value="Error catching added to input functions in Menu class." />
     <MESSAGE value="Merge branch 'master' of https://nucode.ncl.ac.uk/scomp/stage1/csc1035/teams/Team-40/assessment-3-team-project---small-business-case-study&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="Fixed quantity in recipt and created a few starting classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed quantity in recipt and created a few starting classes" />
+    <MESSAGE value="Fixed total price to use multiply the price by the quantity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed total price to use multiply the price by the quantity" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="800" height="679" key="#Project_Structure" />
@@ -707,20 +821,30 @@
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Transaction.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/recipt.txt" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="901">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recipt.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -736,54 +860,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Transaction.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fbe19a01-333b-40c8-92e7-999b31500319/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding>
-            <element signature="e#233#248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Jtests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/epos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+        <state relative-caret-position="-2865">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Jtests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#17#1" expanded="true" />
+            <element signature="e#0#9#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Sale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
         </state>
       </provider>
     </entry>

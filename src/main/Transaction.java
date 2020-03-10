@@ -17,21 +17,23 @@ public class Transaction implements CRUD{
      */
     @Override
     public Item findItem(int id) {
+
+        Session sessionLocal = HibernateUtil.getSessionFactory().openSession();
         try {
-            session.beginTransaction();// begin transaction
-            Item item = session.get(Item.class, id);//looks up item
+            sessionLocal.beginTransaction();// begin transaction
+            Item item = sessionLocal.get(Item.class, id);//looks up item
             return item;//return found item or null if item wasn't found
         }
         catch (HibernateException e)
         {
-            if (session!=null) {
-                session.getTransaction().rollback();
+            if (sessionLocal!=null) {
+                sessionLocal.getTransaction().rollback();
                 e.printStackTrace();
             }
         }
         finally {
-            if (session != null) {
-                session.close();
+            if (sessionLocal != null) {
+                sessionLocal.close();
             }
         }
         return null;

@@ -1,6 +1,5 @@
 package main;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -19,6 +18,11 @@ public class Sale {
 
     }
 
+    /**
+     * Starts the sale process.
+     * This allows users to choose if they would like to purchase an item,
+     * and when they are finished, produce a receipt of their transaction.
+     */
     public void saleStart() {
         while (true) {
             System.out.println("Please enter a number to make a choice \n" +
@@ -37,6 +41,14 @@ public class Sale {
         }
     }
 
+    /**
+     * Adds an item to the current transaction.
+     * The inputted ID is used to find the item in the database,
+     * and if the stock level is higher than 0, this item will be
+     * added to the sale.
+     *
+     * @param id the ID of the item to buy
+     */
     public static void addToSale(int id) {
 
         Item item = tx.findItem(id);
@@ -59,6 +71,18 @@ public class Sale {
         }
     }
 
+    /**
+     * Produces a receipt of the user's active transaction.
+     * This includes entering the money to pay for the items,
+     * and gives the correct change.
+     *
+     * Once they have paid for their items, the user is given a choice
+     * of whether they would like to output the receipt just to the console,
+     * or both to the console and an external .txt file.
+     *
+     * @param shoppingList a hash map listing each item purchased
+     * @param quantityList a hash map which stores the quantity of each purchased item
+     */
     public void Receipt(HashMap<Integer, Item> shoppingList, HashMap<Integer, Integer> quantityList) {
         // Asks user if they want to write the receipt to a file.
         System.out.println("Please enter \n 1: to print receipt to command line and save it to a separate file \n " +

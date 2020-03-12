@@ -20,6 +20,7 @@ public class Transaction implements CRUD{
         try {
             sessionLocal.beginTransaction();// begin transaction
             return sessionLocal.get(Item.class, id);//return found item or null if item wasn't found
+
         }
         catch (HibernateException e)
         {

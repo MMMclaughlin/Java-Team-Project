@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -31,10 +32,14 @@ public class Sale {
                 System.out.println("Enter the id of the item you want to purchase: ");//adding to "basket"
                 int id = Menu.intInput();//takes input of next id
                 addToSale(id);//adding new id to saleStart
+                recentSales(id);
+
             } else {//saleStart finished creating receipt
                 System.out.println("Generating receipt");
+
                 Receipt(shoppingList,quantityList);//pass shopping list into receipt
                 System.out.println("Sale complete");
+
                 break;
             }
         }
@@ -51,6 +56,7 @@ public class Sale {
     public static void addToSale(int id) {
 
         Item item = tx.findItem(id);
+
         if (item == null) {// if item does not exist in db
             System.out.println("id not found");
             return;
@@ -118,6 +124,7 @@ public class Sale {
         // Iterates through items in shopping list and adds them to receipt body.
         for (Integer id: shoppingList.keySet()) {
             System.out.format(leftAlignFormat, shoppingList.get(id).getName(), quantityList.get(id), "£" + shoppingList.get(id).getSell_price());
+
         }
 
         // Foot of receipt with total price, money given and change due.
@@ -157,5 +164,25 @@ public class Sale {
                 System.out.println("Sorry, currently external receipts are unavailable due to lack of file access.");
             }
         }
+    }
+
+    public static void recentSales(int id){
+
+        ArrayList<HashMap<Integer, Item>> recent = new ArrayList<>();
+        Item item = tx.findItem(id);
+        //System.out.println(item);
+        /*for (int i = 0; i < recent.size(); i++ ){
+            recent.add(item);
+        }
+        System.out.println(recent);*/
+
+        //for (id: shoppingList.keySet()) {
+            //System.out.format(/*leftAlignFormat, */shoppingList.get(id).getName(), quantityList.get(id), "£" + shoppingList.get(id).getSell_price());
+            recent.add(shoppingList);
+        //}
+
+        System.out.println(recent);
+
+
     }
 }

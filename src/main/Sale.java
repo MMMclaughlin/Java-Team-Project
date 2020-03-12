@@ -166,6 +166,15 @@ public class Sale {
         }
     }
 
+    /**
+     * Produces a list of the most recent sales made on the system,
+     * <p>
+     * When the items have been bought initially they are added to the recents arrayList
+     * Once the items have been added they can be repurchased by the user
+     *
+     * @param id the ID of the items being bought
+
+     */
     public void recentSales(int id) {
 
         ArrayList<HashMap<Integer, Item>> recent = new ArrayList<>();

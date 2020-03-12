@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Sale {
     static HashMap<Integer, Item> shoppingList = new HashMap<Integer, Item>();
-    static HashMap<Integer, Integer> quantityList= new HashMap<>();
+    static HashMap<Integer, Integer> quantityList = new HashMap<>();
     double totalPrice;
     double moneyGiven;
     double changeDue;
@@ -37,7 +37,7 @@ public class Sale {
             } else {//saleStart finished creating receipt
                 System.out.println("Generating receipt");
 
-                Receipt(shoppingList,quantityList);//pass shopping list into receipt
+                Receipt(shoppingList, quantityList);//pass shopping list into receipt
                 System.out.println("Sale complete");
 
                 break;
@@ -80,7 +80,7 @@ public class Sale {
      * Produces a receipt of the user's active transaction.
      * This includes entering the money to pay for the items,
      * and gives the correct change.
-     *
+     * <p>
      * Once they have paid for their items, the user is given a choice
      * of whether they would like to output the receipt just to the console,
      * or both to the console and an external .txt file.
@@ -122,7 +122,7 @@ public class Sale {
         String leftAlignFormat = "| %-30s | %-8s | %-8s | %n";
 
         // Iterates through items in shopping list and adds them to receipt body.
-        for (Integer id: shoppingList.keySet()) {
+        for (Integer id : shoppingList.keySet()) {
             System.out.format(leftAlignFormat, shoppingList.get(id).getName(), quantityList.get(id), "£" + shoppingList.get(id).getSell_price());
 
         }
@@ -147,7 +147,7 @@ public class Sale {
 
                 String leftAlignFormat2 = "| %-30s | %-8s | %-8s | %n";
 
-                for (Integer id: shoppingList.keySet()) {
+                for (Integer id : shoppingList.keySet()) {
                     printLine.printf(leftAlignFormat, shoppingList.get(id).getName(), quantityList.get(id), "£" + shoppingList.get(id).getSell_price());
                 }
 
@@ -159,30 +159,39 @@ public class Sale {
                 printLine.println("+--------------------------------+----------+----------+");
                 printLine.close();
 
-            // Catches error.
+                // Catches error.
             } catch (IOException e) {
                 System.out.println("Sorry, currently external receipts are unavailable due to lack of file access.");
             }
         }
     }
 
-    public static void recentSales(int id){
+    public void recentSales(int id) {
 
         ArrayList<HashMap<Integer, Item>> recent = new ArrayList<>();
-        Item item = tx.findItem(id);
-        //System.out.println(item);
-        /*for (int i = 0; i < recent.size(); i++ ){
-            recent.add(item);
+
+        recent.add(shoppingList);
+
+        System.out.println("Recent Sales: " + recent);
+
+        System.out.println("Please enter a number to make a choice \n" +
+                "1) Re Purchase an item \n" +
+                "2) Checkout and generate receipt");//user input
+        if (Menu.intInput() == 1) {
+            System.out.println("Enter the id of the item you want to re purchase: ");//adding to "basket"
+            id = Menu.intInput();//takes input of next id
+            addToSale(id);//adding new id to saleStart
+
+        } else {//saleStart finished creating receipt
+            System.out.println("Generating receipt");
+
+            Receipt(shoppingList, quantityList);//pass shopping list into receipt
+            System.out.println("Sale complete");
+
         }
-        System.out.println(recent);*/
-
-        //for (id: shoppingList.keySet()) {
-            //System.out.format(/*leftAlignFormat, */shoppingList.get(id).getName(), quantityList.get(id), "£" + shoppingList.get(id).getSell_price());
-            recent.add(shoppingList);
-        //}
-
-        System.out.println(recent);
 
 
+
+        }
     }
-}
+

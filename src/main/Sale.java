@@ -191,13 +191,13 @@ public class Sale {
             id = Menu.intInput();//takes input of next id
             addToSale(id);//adding new id to saleStart
 
-        } else {//saleStart finished creating receipt
-            System.out.println("Generating receipt");
+    } else {//saleStart finished creating receipt
+        System.out.println("Generating receipt");
 
-            Receipt(shoppingList, quantityList);//pass shopping list into receipt
-            System.out.println("Sale complete");
+        Receipt(shoppingList, quantityList);//pass shopping list into receipt
+        System.out.println("Sale complete");
 
-        }
+    }
 
 
 
